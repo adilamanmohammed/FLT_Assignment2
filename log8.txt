@@ -1,0 +1,1534 @@
+Script started on 2023-09-14 13:14:50+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="154" LINES="11"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 23
+buffer[2]: 41
+buffer[3]: 14
+buffer[4]: 44
+buffer[5]: 1
+
+separate :4
+final state: 1	 FSlength :1 FSarrayIndex:5
+ 
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	p	p	p	p	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	p	p	a	p	
+
+s3	p	a	p	p	b	p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=1  rev=023 outg=235
+ m=3 n=3
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	p	p	p	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	p	p	a	p	
+
+s3	p	a	p	p	b	p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	pUeps(p)*b	p	p	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	p	p	a	p	
+
+s3	p	a	p	p	b	p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	pUeps(p)*b	p	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	p	p	a	p	
+
+s3	p	a	p	p	b	p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	pUeps(p)*b	p	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	p	a	p	
+
+s3	p	a	p	p	b	p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	pUeps(p)*b	p	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	p	
+
+s3	p	a	p	p	b	p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	pUeps(p)*b	p	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	p	p	b	p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	pUeps(p)*b	p	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	p	b	p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	pUeps(p)*b	p	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	pUeps(p)*b	p	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=2  rev=013 outg=1345
+ m=3 n=4
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*b	p	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	p	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	p	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	p	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	a	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	b	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=3  rev=012 outg=1245
+ m=3 n=4
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=4  rev=0123 outg=1245
+ m=4 n=4
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*b	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*a	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*b	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=1
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*bUbUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUa(p)*a	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*bUbUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUa(p)*aUbUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*a	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*bUbUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUa(p)*aUbUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*aUbUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*eps	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=3 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	epsUpUeps(p)*a(pUb(p)*a)*bUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b	pUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s1	p	pUa(pUb(p)*a)*bUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	bUa(pUb(p)*a)*pUb(p)*b	pUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	epsUa(pUb(p)*a)*pUb(p)*epsUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUa(pUb(p)*a)*aUbUa(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s2	p	bUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*aUpUa(p)*a(pUb(p)*a)*bUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUb(p)*b	aUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUb(p)*epsUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUaUpUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s3	p	aUpUa(p)*a(pUb(p)*a)*bUbUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUa(p)*aUbUpUa(p)*a(pUb(p)*a)*a((aUb))*p	pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b	bUpUa(p)*a(pUb(p)*a)*aUbUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)	pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUbUpUa(p)*a(pUb(p)*a)*aUbUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p	
+
+s4	p	p	p	p	(aUb)	p	
+
+s5	p	p	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUeps(p)*epsUpUeps(p)*a(pUb(p)*a)*pUb(p)*epsUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*pUa(p)*epsUpUa(p)*a(pUb(p)*a)*pUb(p)*epsUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*aUpUpUeps(p)*a(pUb(p)*a)*aUpUeps(p)*bUpUeps(p)*a(pUb(p)*a)*pUb(p)*b(pUa(p)*bUpUa(p)*a(pUb(p)*a)*pUb(p)*b)*bUpUa(p)*a(pUb(p)*a)*a((aUb))*(aUb)((aUb))*p
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+rip=1  rev=02 outg=2
+ m=2 n=1
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	eps	pUeps(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	eps	pUeps(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+rip=2  rev=01 outg=13
+ m=2 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	pUpUeps(a)*b(bUa(a)*b)*eps	
+
+s1	p	a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	pUpUeps(a)*b(bUa(a)*b)*eps	
+
+s1	p	aUb(bUa(a)*b)*a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	pUpUeps(a)*b(bUa(a)*b)*eps	
+
+s1	p	aUb(bUa(a)*b)*a	b	pUb(bUa(a)*b)*eps	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+rip=1  rev=02 outg=2
+ m=2 n=1
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	eps	pUeps(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	eps	pUeps(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+rip=2  rev=01 outg=13
+ m=2 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	pUpUeps(a)*b(bUa(a)*b)*eps	
+
+s1	p	a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	pUpUeps(a)*b(bUa(a)*b)*eps	
+
+s1	p	aUb(bUa(a)*b)*a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	pUpUeps(a)*b(bUa(a)*b)*eps	
+
+s1	p	aUb(bUa(a)*b)*a	b	pUb(bUa(a)*b)*eps	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+ m=2 n=1
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	eps	pUeps(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	eps	pUeps(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+ m=2 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	pUpUeps(a)*b(bUa(a)*b)*eps	
+
+s1	p	a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	pUpUeps(a)*b(bUa(a)*b)*eps	
+
+s1	p	aUb(bUa(a)*b)*a	b	p	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUpUeps(a)*b(bUa(a)*b)*a	pUeps(a)*b	pUpUeps(a)*b(bUa(a)*b)*eps	
+
+s1	p	aUb(bUa(a)*b)*a	b	pUb(bUa(a)*b)*eps	
+
+s2	p	a	bUa(a)*b	eps	
+
+s3	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+ m=2 n=1
+
+p=0 q=2
+
+p=2 q=2
+ m=2 n=2
+
+p=0 q=1
+
+p=0 q=3
+
+p=1 q=1
+
+p=1 q=3
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+ m=2 n=1
+ m=2 n=2
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+ <<<<<<<<<<<Converted Input matrix>>>>>>>>>>
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+ <<<<<<<<<<<Converted Input matrix>>>>>>>>>>
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+ <<<<<<<<<<<Converted Input matrix>>>>>>>>>>
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:268:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kbufferindex[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kbuffindex[m[K’?
+  268 |  for(int i=0;i<[01;31m[Kbufferindex[m[K;i++)
+      |                [01;31m[K^~~~~~~~~~~[m[K
+      |                [32m[Kbuffindex[m[K
+[01m[Kprog2.c:268:16:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:272:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Katoi[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  272 |             if((atoi([01;35m[Kbuffer[i][j][m[K)<buffindex)==0)
+      |                      [01;35m[K~~~~~~~~~^~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:10[m[K:
+[01m[K/usr/include/stdlib.h:104:30:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+  104 | extern int atoi ([01;36m[Kconst char *__nptr[m[K)
+      |                  [01;36m[K~~~~~~~~~~~~^~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+Segmentation fault (core dumped)
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+ <<<<<<<<<<<Converted Input matrix>>>>>>>>>>
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>
+
+buffer[0]: ab
+buffer[1]: 123
+buffer[2]: 12
+buffer[3]: 2
+transition is not valid state:1 length:3
+NO
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+ <<<<<<<<<<<Converted Input matrix>>>>>>>>>>
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+The Regular Expression :(S,F)= pUpUeps(a)*b(bUa(a)*b)*eps
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adi

@@ -1,0 +1,3792 @@
+Script started on 2023-09-14 10:04:40+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="154" LINES="15"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ls
+DFSM.txt  log1.txt  log2.txt  log3.txt  log4.txt  log5.txt  prog2.c  [0m[01;32mrun[0m
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear[3Plscleargcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:30:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrcmp[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+   80 |         if(strcmp([01;35m[Ktransitions[p,q][m[K)!="p")
+      |                   [01;35m[K~~~~~~~~~~~^~~~~[m[K
+      |                              [01;35m[K|[m[K
+      |                              [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:137:32:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  137 | extern int strcmp ([01;36m[Kconst char *__s1[m[K, const char *__s2)
+      |                    [01;36m[K~~~~~~~~~~~~^~~~[m[K
+[01m[Kprog2.c:80:12:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrcmp[m[K’
+   80 |         if([01;31m[Kstrcmp[m[K(transitions[p,q])!="p")
+      |            [01;31m[K^~~~~~[m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:137:12:[m[K [01;36m[Knote: [m[Kdeclared here
+  137 | extern int [01;36m[Kstrcmp[m[K (const char *__s1, const char *__s2)
+      |            [01;36m[K^~~~~~[m[K
+[01m[Kprog2.c:82:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kstrcpy[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+   82 |             strcpy(Solved,[01;35m[Ktransitions[p,q][m[K);
+      |                           [01;35m[K~~~~~~~~~~~^~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o runclear[Kgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:28:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if(transitions[p,q][01;35m[K!=[m[K'p')
+      |                            [01;35m[K^~[m[K
+[01m[Kprog2.c:82:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kstrcpy[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+   82 |             strcpy(Solved,[01;35m[Ktransitions[p,q][m[K);
+      |                           [01;35m[K~~~~~~~~~~~^~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o runclear[K[3Plscleargcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+
+a=0 b=2
+
+a=1 b=1
+
+a=1 b=2
+
+a=2 b=1
+
+a=2 b=2
+
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+
+a=1 b=3
+
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+
+a=2 b=4
+
+a=3 b=3
+
+a=3 b=4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:28:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if(transitions[p,q][01;35m[K!=[m[K'p')
+      |                            [01;35m[K^~[m[K
+[01m[Kprog2.c:82:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kstrcpy[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+   82 |             strcpy(Solved,[01;35m[Ktransitions[p,q][m[K);
+      |                           [01;35m[K~~~~~~~~~~~^~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[01m[Kprog2.c:84:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ksolved[m[K’ undeclared (first use in this function); did you mean ‘[01m[KSolved[m[K’?
+   84 |             printf("solved =%s ",[01;31m[Ksolved[m[K);
+      |                                  [01;31m[K^~~~~~[m[K
+      |                                  [32m[KSolved[m[K
+[01m[Kprog2.c:84:34:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:28:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if(transitions[p,q][01;35m[K!=[m[K'p')
+      |                            [01;35m[K^~[m[K
+[01m[Kprog2.c:82:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kstrcpy[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+   82 |             strcpy(Solved,[01;35m[Ktransitions[p,q][m[K);
+      |                           [01;35m[K~~~~~~~~~~~^~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:28:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if(transitions[p,q][01;35m[K!=[m[K'p')
+      |                            [01;35m[K^~[m[K
+[01m[Kprog2.c:82:20:[m[K [01;31m[Kerror: [m[Kassignment to expression with array type
+   82 |             Solved [01;31m[K=[m[K transitions[p][q];
+      |                    [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:28:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if(transitions[p,q][01;35m[K!=[m[K'p')
+      |                            [01;35m[K^~[m[K
+[01m[Kprog2.c:82:27:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kchar[m[K’ from ‘[01m[Kchar *[m[K’ makes integer from pointer without a cast [[01;35m[K-Wint-conversion[m[K]
+   82 |             char Solved = [01;35m[Ktransitions[m[K[p][q];
+      |                           [01;35m[K^~~~~~~~~~~[m[K
+[01m[Kprog2.c:83:20:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrcat[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+   83 |             strcat([01;35m[KSolved[m[K,"U");
+      |                    [01;35m[K^~~~~~[m[K
+      |                    [01;35m[K|[m[K
+      |                    [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:130:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar * restrict[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+  130 | extern char *[01;36m[Kstrcat[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[01m[Kprog2.c:84:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+   84 |             printf("solved =[01;35m[K%s[m[K ",[32m[KSolved[m[K);
+      |                             [01;35m[K~^[m[K   [32m[K~~~~~~[m[K
+      |                              [01;35m[K|[m[K   [32m[K|[m[K
+      |                              [01;35m[K|[m[K   [32m[Kint[m[K
+      |                              [01;35m[Kchar *[m[K
+      |                             [32m[K%d[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+Segmentation fault (core dumped)
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:28:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if(transitions[p,q][01;35m[K!=[m[K'p')
+      |                            [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+
+a=0 b=2
+
+a=1 b=1
+
+a=1 b=2
+
+a=2 b=1
+
+a=2 b=2
+
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+
+a=1 b=3
+
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+
+a=2 b=4
+
+a=3 b=3
+
+a=3 b=4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:28:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if(transitions[p,q][01;35m[K!=[m[K'p')
+      |                            [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:30:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if(transitions[p][q] [01;35m[K!=[m[K 'p')
+      |                              [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:30:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if(transitions[p][q] [01;35m[K==[m[K 'p')
+      |                              [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:31:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if (transitions[p][q] [01;35m[K!=[m[K 'p')
+      |                               [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:31:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   80 |         if (transitions[p][q] [01;35m[K!=[m[K 'p')
+      |                               [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kformula[m[K’:
+[01m[Kprog2.c:80:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+   80 |         if(strcmp(transitions[[01;31m[Ki[m[K][target],"p")!=0)
+      |                               [01;31m[K^[m[K
+[01m[Kprog2.c:80:31:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ cleargcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+
+a=0 b=2
+
+a=1 b=1
+
+a=1 b=2
+
+a=2 b=1
+
+a=2 b=2
+
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+
+a=1 b=3
+
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+
+a=2 b=4
+
+a=3 b=3
+
+a=3 b=4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+solved =eps 
+a=0 b=2
+
+a=1 b=1
+solved =b 
+a=1 b=2
+solved =a 
+a=2 b=1
+solved =b 
+a=2 b=2
+
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+solved =b 
+a=1 b=3
+
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+solved =a 
+a=2 b=4
+
+a=3 b=3
+solved =(aUb) 
+a=3 b=4
+solved =eps [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+solved =epsU 
+a=0 b=2
+
+a=1 b=1
+solved =bU 
+a=1 b=2
+solved =aU 
+a=2 b=1
+solved =bU 
+a=2 b=2
+
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+solved =bU 
+a=1 b=3
+
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+solved =aU 
+a=2 b=4
+
+a=3 b=3
+solved =(aUb)U 
+a=3 b=4
+solved =epsU [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+
+a=0 b=2
+
+a=1 b=1
+solved =bU 
+a=1 b=2
+solved =aU 
+a=2 b=1
+solved =bU 
+a=2 b=2
+
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+solved =bU 
+a=1 b=3
+
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+solved =aU 
+a=2 b=4
+
+a=3 b=3
+solved =(aUb)U 
+a=3 b=4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+solved =eps 
+a=0 b=2
+solved =p 
+a=1 b=1
+solved =bU 
+a=1 b=2
+solved =aU 
+a=2 b=1
+solved =bU 
+a=2 b=2
+solved =p 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+solved =bU 
+a=1 b=3
+solved =p 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+solved =aU 
+a=2 b=4
+solved =p 
+a=3 b=3
+solved =(aUb)U 
+a=3 b=4
+solved =eps [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+solved =eps 
+a=0 b=2
+solved =p 
+a=1 b=1
+solved =bU 
+a=1 b=2
+solved =aU 
+a=2 b=1
+solved =bU 
+a=2 b=2
+solved =p 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+solved =bU 
+a=1 b=3
+solved =p 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+solved =aU 
+a=2 b=4
+solved =p 
+a=3 b=3
+solved =(aUb)U 
+a=3 b=4
+solved =eps [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+solved =eps 
+a=0 b=2
+solved =p 
+a=1 b=1
+solved =bU 
+a=1 b=2
+solved =aU 
+a=2 b=1
+solved =bU 
+a=2 b=2
+solved =p 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+solved =bU 
+a=1 b=3
+solved =p 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+solved =aU 
+a=2 b=4
+solved =p 
+a=3 b=3
+solved =(aUb)U 
+a=3 b=4
+solved =eps [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+a=0 b=1
+solved =eps 
+a=0 b=2
+solved =epseps 
+a=1 b=1
+solved =bUb 
+a=1 b=2
+solved =aUb 
+a=2 b=1
+solved =bUb 
+a=2 b=2
+solved =bUbb 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+a=1 b=1
+solved =bUa 
+a=1 b=3
+solved =bUaa 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+a=2 b=3
+solved =aUa 
+a=2 b=4
+solved =aUaa 
+a=3 b=3
+solved =(aUb)U(aUb) 
+a=3 b=4
+solved =(aUb)U(aUb)(aUb) [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+solved =eps 
+p=0 q=2
+solved =epseps 
+p=1 q=1
+solved =bUb 
+p=1 q=2
+solved =aUb 
+p=2 q=1
+solved =bUb 
+p=2 q=2
+solved =bUbb 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+p=1 q=1
+solved =bUa 
+p=1 q=3
+solved =bUaa 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+p=2 q=3
+solved =aUa 
+p=2 q=4
+solved =aUaa 
+p=3 q=3
+solved =(aUb)U(aUb) 
+p=3 q=4
+solved =(aUb)U(aUb)(aUb) [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+solved =epsUeps 
+p=0 q=2
+solved =pUeps 
+p=1 q=1
+solved =bUb 
+p=1 q=2
+solved =aUb 
+p=2 q=1
+solved =bUb 
+p=2 q=2
+solved =pUb 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+p=1 q=1
+solved =bUa 
+p=1 q=3
+solved =pUa 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+p=2 q=3
+solved =aUa 
+p=2 q=4
+solved =pUa 
+p=3 q=3
+solved =(aUb)U(aUb) 
+p=3 q=4
+solved =epsU(aUb) [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+solved =epsUeps 
+p=0 q=2
+solved =pUeps 
+p=1 q=1
+solved =bUb 
+p=1 q=2
+solved =aUb 
+p=2 q=1
+solved =bUb 
+p=2 q=2
+solved =pUb 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+p=1 q=1
+solved =bUa 
+p=1 q=3
+solved =pUa 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+p=2 q=3
+solved =aUa 
+p=2 q=4
+solved =pUa 
+p=3 q=3
+solved =(aUb)U(aUb) 
+p=3 q=4
+solved =epsU(aUb) [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[01m[Kprog2.c:78:23:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’, ‘[01m[K,[m[K’ or ‘[01m[K)[m[K’ before numeric constant
+   78 | int formula(int p,int [01;31m[K1[m[K,int rip)
+      |                       [01;31m[K^[m[K
+[01m[Kprog2.c:[m[K In function ‘[01m[Kripstate[m[K’:
+[01m[Kprog2.c:121:13:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kformula[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+  121 |             [01;35m[Kformula[m[K(a,b,x);
+      |             [01;35m[K^~~~~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+solved =epsUeps 
+p=0 q=2
+solved =epsUeps 
+p=1 q=1
+solved =bUb 
+p=1 q=2
+solved =bUb 
+p=2 q=1
+solved =bUb 
+p=2 q=2
+solved =bUb 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+p=1 q=1
+solved =bUa 
+p=1 q=3
+solved =bUa 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+p=2 q=3
+solved =bUa 
+p=2 q=4
+solved =bUa 
+p=3 q=3
+solved =pU(aUb) 
+p=3 q=4
+solved =pU(aUb) [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+solved =epsUeps 
+p=0 q=2
+solved =pUeps 
+p=1 q=1
+solved =bUb 
+p=1 q=2
+solved =aUb 
+p=2 q=1
+solved =bUb 
+p=2 q=2
+solved =pUb 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+p=1 q=1
+solved =bUa 
+p=1 q=3
+solved =pUa 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+p=2 q=3
+solved =aUa 
+p=2 q=4
+solved =pUa 
+p=3 q=3
+solved =(aUb)U(aUb) 
+p=3 q=4
+solved =epsU(aUb) [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+solved =epsUepsb* 
+p=0 q=2
+solved =pUepsb* 
+p=1 q=1
+solved =bUbb* 
+p=1 q=2
+solved =aUbb* 
+p=2 q=1
+solved =bUbb* 
+p=2 q=2
+solved =pUbb* 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+p=1 q=1
+solved =bUap* 
+p=1 q=3
+solved =pUap* 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+p=2 q=3
+solved =aUa(aUb)* 
+p=2 q=4
+solved =pUa(aUb)* 
+p=3 q=3
+solved =(aUb)U(aUb)(aUb)* 
+p=3 q=4
+solved =epsU(aUb)(aUb)* [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+solved =epsUepsb*b 
+p=0 q=2
+solved =pUepsb*a 
+p=1 q=1
+solved =bUbb*b 
+p=1 q=2
+solved =aUbb*a 
+p=2 q=1
+solved =bUbb*b 
+p=2 q=2
+solved =pUbb*a 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+p=1 q=1
+solved =bUap*b 
+p=1 q=3
+solved =pUap*a 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+p=2 q=3
+solved =aUa(aUb)*(aUb) 
+p=2 q=4
+solved =pUa(aUb)*eps 
+p=3 q=3
+solved =(aUb)U(aUb)(aUb)*(aUb) 
+p=3 q=4
+solved =epsU(aUb)(aUb)*eps [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+solved =epsUeps(b)*b 
+p=0 q=2
+solved =pUeps(b)*a 
+p=1 q=1
+solved =bUb(b)*b 
+p=1 q=2
+solved =aUb(b)*a 
+p=2 q=1
+solved =bUb(b)*b 
+p=2 q=2
+solved =pUb(b)*a 
+rip=2  rev=1 outg=13
+ m=1 n=2
+
+p=1 q=1
+solved =bUa(p)*b 
+p=1 q=3
+solved =pUa(p)*a 
+rip=3  rev=23 outg=34
+ m=2 n=2
+
+p=2 q=3
+solved =aUa((aUb))*(aUb) 
+p=2 q=4
+solved =pUa((aUb))*eps 
+p=3 q=3
+solved =(aUb)U(aUb)((aUb))*(aUb) 
+p=3 q=4
+solved =epsU(aUb)((aUb))*eps [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+solved =epsUeps(b)*b transitions[0][1]:epsUeps(b)*b 
+p=0 q=2
+solved =pUepsUeps(b)*b(b)*a transitions[0][2]:pUepsUeps(b)*b(b)*a 
+p=1 q=1
+solved =bUb(b)*b transitions[1][1]:bUb(b)*b 
+p=1 q=2
+solved =aUbUb(b)*b(bUb(b)*b)*a transitions[1][2]:aUbUb(b)*b(bUb(b)*b)*a 
+p=2 q=1
+solved =bUb(bUb(b)*b)*bUb(b)*b transitions[2][1]:bUb(bUb(b)*b)*bUb(b)*b 
+p=2 q=2
+solved =pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a transitions[2][2]:pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a 
+rip=2  rev=012 outg=123
+ m=3 n=3
+
+p=0 q=1
+solved =epsUeps(b)*bUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*bUb(bUb(b)*b)*bUb(b)*b transitions[0][1]:epsUeps(b)*bUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*bUb(bUb(b)*b)*bUb(b)*b 
+p=0 q=2
+solved =pUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a transitions[0][2]:pUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a 
+p=0 q=3
+solved =pUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a transitions[0][3]:pUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a 
+p=1 q=1
+solved =bUb(b)*bUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*bUb(bUb(b)*b)*bUb(b)*b transitions[1][1]:bUb(b)*bUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*bUb(bUb(b)*b)*bUb(b)*b 
+p=1 q=2
+solved =aUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a transitions[1][2]:aUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a 
+p=1 q=3
+solved =pUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a transitions[1][3]:pUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a 
+p=2 q=1
+solved =bUb(bUb(b)*b)*bUb(b)*bUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*bUb(bUb(b)*b)*bUb(b)*b transitions[2][1]:bUb(bUb(b)*b)*bUb(b)*bUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*bUb(bUb(b)*b)*bUb(b)*b 
+p=2 q=2
+solved =pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a transitions[2][2]:pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a 
+p=2 q=3
+solved =aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a transitions[2][3]:aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a 
+rip=3  rev=0123 outg=34
+ m=4 n=2
+
+p=0 q=3
+solved =pUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb) transitions[0][3]:pUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb) 
+p=0 q=4
+solved =pUpUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb)((aUb))*eps transitions[0][4]:pUpUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb)((aUb))*eps 
+p=1 q=3
+solved =pUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb) transitions[1][3]:pUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb) 
+p=1 q=4
+solved =pUpUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb)((aUb))*eps transitions[1][4]:pUpUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb)((aUb))*eps 
+p=2 q=3
+solved =aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUaUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb) transitions[2][3]:aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUaUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb) 
+p=2 q=4
+solved =pUaUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUaUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb)((aUb))*eps transitions[2][4]:pUaUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUaUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb)((aUb))*eps 
+p=3 q=3
+solved =(aUb)U(aUb)((aUb))*(aUb) transitions[3][3]:(aUb)U(aUb)((aUb))*(aUb) 
+p=3 q=4
+solved =epsU(aUb)U(aUb)((aUb))*(aUb)((aUb)U(aUb)((aUb))*(aUb))*eps transitions[3][4]:epsU(aUb)U(aUb)((aUb))*(aUb)((aUb)U(aUb)((aUb))*(aUb))*eps [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+transitions[0][1]:epsUeps(b)*b 
+p=0 q=2
+transitions[0][2]:pUepsUeps(b)*b(b)*a 
+p=1 q=1
+transitions[1][1]:bUb(b)*b 
+p=1 q=2
+transitions[1][2]:aUbUb(b)*b(bUb(b)*b)*a 
+p=2 q=1
+transitions[2][1]:bUb(bUb(b)*b)*bUb(b)*b 
+p=2 q=2
+transitions[2][2]:pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a 
+rip=2  rev=012 outg=123
+ m=3 n=3
+
+p=0 q=1
+transitions[0][1]:epsUeps(b)*bUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*bUb(bUb(b)*b)*bUb(b)*b 
+p=0 q=2
+transitions[0][2]:pUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a 
+p=0 q=3
+transitions[0][3]:pUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a 
+p=1 q=1
+transitions[1][1]:bUb(b)*bUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*bUb(bUb(b)*b)*bUb(b)*b 
+p=1 q=2
+transitions[1][2]:aUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a 
+p=1 q=3
+transitions[1][3]:pUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a 
+p=2 q=1
+transitions[2][1]:bUb(bUb(b)*b)*bUb(b)*bUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*bUb(bUb(b)*b)*bUb(b)*b 
+p=2 q=2
+transitions[2][2]:pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a 
+p=2 q=3
+transitions[2][3]:aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a 
+rip=3  rev=0123 outg=34
+ m=4 n=2
+
+p=0 q=3
+transitions[0][3]:pUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb) 
+p=0 q=4
+transitions[0][4]:pUpUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUpUepsUeps(b)*b(b)*aUpUepsUeps(b)*b(b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb)((aUb))*eps 
+p=1 q=3
+transitions[1][3]:pUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb) 
+p=1 q=4
+transitions[1][4]:pUpUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUpUaUbUb(b)*b(bUb(b)*b)*aUaUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb)((aUb))*eps 
+p=2 q=3
+transitions[2][3]:aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUaUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb) 
+p=2 q=4
+transitions[2][4]:pUaUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*aUaUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*aUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a)*a((aUb))*(aUb)((aUb))*eps 
+p=3 q=3
+transitions[3][3]:(aUb)U(aUb)((aUb))*(aUb) 
+p=3 q=4
+transitions[3][4]:epsU(aUb)U(aUb)((aUb))*(aUb)((aUb)U(aUb)((aUb))*(aUb))*eps [0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+s0	s1	s2	s3	s4	
+
+p=0 q=2
+s0	s1	s2	s3	s4	
+
+p=1 q=1
+s0	s1	s2	s3	s4	
+
+p=1 q=2
+s0	s1	s2	s3	s4	
+
+p=2 q=1
+s0	s1	s2	s3	s4	
+
+p=2 q=2
+s0	s1	s2	s3	s4	
+
+rip=2  rev=012 outg=123
+ m=3 n=3
+
+p=0 q=1
+s0	s1	s2	s3	s4	
+
+p=0 q=2
+s0	s1	s2	s3	s4	
+
+p=0 q=3
+s0	s1	s2	s3	s4	
+
+p=1 q=1
+s0	s1	s2	s3	s4	
+
+p=1 q=2
+s0	s1	s2	s3	s4	
+
+p=1 q=3
+s0	s1	s2	s3	s4	
+
+p=2 q=1
+s0	s1	s2	s3	s4	
+
+p=2 q=2
+s0	s1	s2	s3	s4	
+
+p=2 q=3
+s0	s1	s2	s3	s4	
+
+rip=3  rev=0123 outg=34
+ m=4 n=2
+
+p=0 q=3
+s0	s1	s2	s3	s4	
+
+p=0 q=4
+s0	s1	s2	s3	s4	
+
+p=1 q=3
+s0	s1	s2	s3	s4	
+
+p=1 q=4
+s0	s1	s2	s3	s4	
+
+p=2 q=3
+s0	s1	s2	s3	s4	
+
+p=2 q=4
+s0	s1	s2	s3	s4	
+
+p=3 q=3
+s0	s1	s2	s3	s4	
+
+p=3 q=4
+s0	s1	s2	s3	s4	
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+s0	s1	s2	s3	
+
+p=0 q=2
+s0	s1	s2	s3	
+
+p=1 q=1
+s0	s1	s2	s3	
+
+p=1 q=2
+s0	s1	s2	s3	
+
+p=2 q=1
+s0	s1	s2	s3	
+
+p=2 q=2
+s0	s1	s2	s3	
+
+rip=2  rev=012 outg=123
+ m=3 n=3
+
+p=0 q=1
+s0	s1	s2	s3	
+
+p=0 q=2
+s0	s1	s2	s3	
+
+p=0 q=3
+s0	s1	s2	s3	
+
+p=1 q=1
+s0	s1	s2	s3	
+
+p=1 q=2
+s0	s1	s2	s3	
+
+p=1 q=3
+s0	s1	s2	s3	
+
+p=2 q=1
+s0	s1	s2	s3	
+
+p=2 q=2
+s0	s1	s2	s3	
+
+p=2 q=3
+s0	s1	s2	s3	
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+s0	s1	s2	s3	s4	
+
+p=0 q=2
+s0	s1	s2	s3	s4	
+
+p=1 q=1
+s0	s1	s2	s3	s4	
+
+p=1 q=2
+s0	s1	s2	s3	s4	
+
+p=2 q=1
+s0	s1	s2	s3	s4	
+
+p=2 q=2
+s0	s1	s2	s3	s4	
+
+rip=2  rev=012 outg=123
+ m=3 n=3
+
+p=0 q=1
+s0	s1	s2	s3	s4	
+
+p=0 q=2
+s0	s1	s2	s3	s4	
+
+p=0 q=3
+s0	s1	s2	s3	s4	
+
+p=1 q=1
+s0	s1	s2	s3	s4	
+
+p=1 q=2
+s0	s1	s2	s3	s4	
+
+p=1 q=3
+s0	s1	s2	s3	s4	
+
+p=2 q=1
+s0	s1	s2	s3	s4	
+
+p=2 q=2
+s0	s1	s2	s3	s4	
+
+p=2 q=3
+s0	s1	s2	s3	s4	
+
+rip=3  rev=0123 outg=34
+ m=4 n=2
+
+p=0 q=3
+s0	s1	s2	s3	s4	
+
+p=0 q=4
+s0	s1	s2	s3	s4	
+
+p=1 q=3
+s0	s1	s2	s3	s4	
+
+p=1 q=4
+s0	s1	s2	s3	s4	
+
+p=2 q=3
+s0	s1	s2	s3	s4	
+
+p=2 q=4
+s0	s1	s2	s3	s4	
+
+p=3 q=3
+s0	s1	s2	s3	s4	
+
+p=3 q=4
+s0	s1	s2	s3	s4	
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+s0	s1	s2	s3	s4	
+
+p=0 q=2
+s0	s1	s2	s3	s4	
+
+p=1 q=1
+s0	s1	s2	s3	s4	
+
+p=1 q=2
+s0	s1	s2	s3	s4	
+
+p=2 q=1
+s0	s1	s2	s3	s4	
+
+p=2 q=2
+s0	s1	s2	s3	s4	
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	bUb(b)*b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s2	p	bUb(bUb(b)*b)*bUb(b)*b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s2	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	bUb(b)*b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s2	p	bUb(bUb(b)*b)*bUb(b)*b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	epsUeps(b)*b	pUepsUeps(b)*b(b)*a	p	p	
+
+s1	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s2	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt [10Pclear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear./run DFSM.txt [10Pclear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear./run DFSM.txt [10Pclear./run DFSM.txt gcc prog2.c -o run[3P./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o runclear[K./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+rip=2  rev=012 outg=123
+ m=3 n=3
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	epsUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s3	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 32
+buffer[3]: pp
+buffer[4]: p2
+buffer[5]: 3
+
+separate :p
+final state: 3	 FSlength :1 FSarrayIndex:5
+ 
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	p	p	p	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=1  rev=0 outg=24
+ m=1 n=2
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	p	p	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	p	pUeps(p)*b	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=2  rev=0124 outg=23
+ m=4 n=2
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	p	pUeps(p)*b	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=4 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=4 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=3  rev=0124 outg=5
+ m=4 n=1
+
+p=0 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=4 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+rip=4  rev=01 outg=235
+ m=2 n=3
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*epsUpUeps(p)*b(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*epsUpUeps(p)*b(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s1	p	p	aUa(b)*bUb(p)*bUb(bUb(b)*b)*bUb(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*epsUpUeps(p)*b(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s1	p	p	aUa(b)*bUb(p)*bUb(bUb(b)*b)*bUb(b)*b	pUaUa(b)*b(b)*aUb(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*epsUpUeps(p)*b(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s1	p	p	aUa(b)*bUb(p)*bUb(bUb(b)*b)*bUb(b)*b	pUaUa(b)*b(b)*aUb(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	b	pUpUaUa(b)*b(b)*a(p)*epsUb(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ c./run DFSM.txt gcc prog2.c -o run[3P./run DFSM.txt gcc prog2.c -o run[3P./run DFSM.txt gcc prog2.c -o runclear[K./run DFSM.txt [10Pclear./run DFSM.txt [10Pclear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear./run DFSM.txt gcc prog2.c -o run[3P./run DFSM.txt gcc prog2.c -o run[3P./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o runclear[K./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 32
+buffer[3]: pp
+buffer[4]: p2
+buffer[5]: 3
+
+separate :p
+final state: 3	 FSlength :1 FSarrayIndex:5
+ 
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	p	p	p	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=1  rev=0 outg=24
+ m=1 n=2
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	p	p	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=4
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*a	p	pUeps(p)*b	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=2  rev=0124 outg=23
+ m=4 n=2
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	p	pUeps(p)*b	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	a	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	p	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=4 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	p	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=4 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	p	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+rip=3  rev=0124 outg=5
+ m=4 n=1
+
+p=0 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	p	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=2 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	p	
+
+s5	p	p	p	p	p	p	
+
+
+p=4 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+rip=4  rev=01 outg=235
+ m=2 n=3
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=0 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*epsUpUeps(p)*b(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s1	p	p	aUa(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*epsUpUeps(p)*b(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s1	p	p	aUa(b)*bUb(p)*bUb(bUb(b)*b)*bUb(b)*b	pUaUa(b)*b(b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*epsUpUeps(p)*b(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s1	p	p	aUa(b)*bUb(p)*bUb(bUb(b)*b)*bUb(b)*b	pUaUa(b)*b(b)*aUb(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	b	pUpUaUa(b)*b(b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+
+p=1 q=5
+
+
+
+	s0	s1	s2	s3	s4	s5	
+s0	p	eps	pUeps(p)*aUpUeps(p)*a(b)*bUpUeps(p)*b(p)*bUb(bUb(b)*b)*bUb(b)*b	pUpUeps(p)*aUpUeps(p)*a(b)*b(b)*aUpUeps(p)*b(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	pUeps(p)*b	pUpUpUeps(p)*aUpUeps(p)*a(b)*b(b)*a(p)*epsUpUeps(p)*b(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s1	p	p	aUa(b)*bUb(p)*bUb(bUb(b)*b)*bUb(b)*b	pUaUa(b)*b(b)*aUb(p)*pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	b	pUpUaUa(b)*b(b)*a(p)*epsUb(p)*pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s2	p	p	bUb(b)*b	aUbUb(b)*b(bUb(b)*b)*a	p	pUaUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s3	p	p	p	p	p	eps	
+
+s4	p	p	bUb(bUb(b)*b)*bUb(b)*b	pUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a	p	pUpUbUb(bUb(b)*b)*bUb(b)*b(bUb(b)*b)*aUbUb(b)*b(bUb(b)*b)*a(p)*eps	
+
+s5	p	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+rip=2  rev=012 outg=123
+ m=3 n=3
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	epsUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s3	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[3P./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+rip=2  rev=012 outg=123
+ m=3 n=3
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	epsUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s3	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ clear./run DFSM.txt gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o runclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ cleargcc prog2.c -o runclear[K./run DFSM.txt 
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+
+separate : 
+final state: 2	 FSlength :1 FSarrayIndex:3
+ 
+
+
+	s0	s1	s2	s3	
+s0	p	eps	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+rip=1  rev=012 outg=12
+ m=3 n=2
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	p	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+rip=2  rev=012 outg=123
+ m=3 n=3
+
+p=0 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=0 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	p	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=1 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=1
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=2
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	eps	
+
+s3	p	p	p	p	
+
+
+p=2 q=3
+
+
+
+	s0	s1	s2	s3	
+s0	p	epsUeps(a)*aUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	pUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUpUepsUeps(a)*a(a)*bUpUepsUeps(a)*a(a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s1	p	aUa(a)*aUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	pUbUaUa(a)*a(aUa(a)*a)*bUbUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*eps	
+
+s2	p	aUa(aUa(a)*a)*aUa(a)*aUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*aUa(aUa(a)*a)*aUa(a)*a	bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b	epsUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*bUbUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b(bUaUa(aUa(a)*a)*aUa(a)*a(aUa(a)*a)*bUaUa(a)*a(aUa(a)*a)*b)*bUa

@@ -1,0 +1,1598 @@
+Script started on 2023-09-14 06:31:53+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="154" LINES="15"]
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 32
+
+separate :3
+final state: 32	 FSlength :2 FSarrayIndex:4
+ index=4 buffer[4][0]=51  temp2=3
+index=4 buffer[4][1]=50  temp2=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	eps	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ index=4 buffer[4][0]=51  temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ index=4 buffer[4][0]=51  temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Kprog2.c:239:13:[m[K [01;35m[Kwarning: [m[Kformat â€˜[01m[K%d[m[Kâ€™ expects argument of type â€˜[01m[Kint[m[Kâ€™, but argument 2 has type â€˜[01m[Kint *[m[Kâ€™ [[01;35m[K-Wformat=[m[K]
+  239 | printf("\n [01;35m[K%d[m[K",[32m[Kout[m[K);
+      |            [01;35m[K~^[m[K  [32m[K~~~[m[K
+      |             [01;35m[K|[m[K  [32m[K|[m[K
+      |             [01;35m[K|[m[K  [32m[Kint *[m[K
+      |             [01;35m[Kint[m[K
+      |            [32m[K%ls[m[K
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ 2[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ 2 18[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Kprog2.c:215:19:[m[K [01;31m[Kerror: [m[Kâ€˜[01m[Ki[m[Kâ€™ undeclared (first use in this function)
+  215 |     for(int rip=1;[01;31m[Ki[m[K<buffindex-1;i++)
+      |                   [01;31m[K^[m[K
+[01m[Kprog2.c:215:19:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kprog2.c:218:46:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of â€˜[01m[Kstrlen[m[Kâ€™ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  218 |         for(int x=0;x<strlen([01;35m[Ktransitions[rip]-1[m[K);x++)
+      |                              [01;35m[K~~~~~~~~~~~~~~~~^~[m[K
+      |                                              [01;35m[K|[m[K
+      |                                              [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected â€˜[01m[Kconst char *[m[Kâ€™ but argument is of type â€˜[01m[Kchar (*)[1000][m[Kâ€™
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[0;32m@adilamanm01 [1;31mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Kprog2.c:218:46:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of â€˜[01m[Kstrlen[m[Kâ€™ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  218 |         for(int x=0;x<strlen([01;35m[Ktransitions[rip]-1[m[K);x++)
+      |                              [01;35m[K~~~~~~~~~~~~~~~~^~[m[K
+      |                                              [01;35m[K|[m[K
+      |                                              [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected â€˜[01m[Kconst char *[m[Kâ€™ but argument is of type â€˜[01m[Kchar (*)[1000][m[Kâ€™
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Kprog2.c:234:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of â€˜[01m[KfindLengthOfRow[m[Kâ€™ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  234 |         for(int x=0;x<findLengthOfRow([01;35m[Ktransitions[m[K, rip);x++)
+      |                                       [01;35m[K^~~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kprog2.c:11:26:[m[K [01;36m[Knote: [m[Kexpected â€˜[01m[Kchar (*)[1000][m[Kâ€™ but argument is of type â€˜[01m[Kchar (*)[1000][1000][m[Kâ€™
+   11 | int findLengthOfRow([01;36m[Kchar arr[][1000][m[K, int rowIndex) {
+      |                     [01;36m[K~~~~~^~~~~~~~~~~[m[K
+[01m[Kprog2.c:[m[K In function â€˜[01m[KfindLengthOfRow[m[Kâ€™:
+[01m[Kprog2.c:244:1:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+  244 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Kprog2.c:235:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of â€˜[01m[KfindLengthOfRow[m[Kâ€™ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  235 |         for(int x=0;x<findLengthOfRow([01;35m[Ktransitions[m[K, rip);x++)
+      |                                       [01;35m[K^~~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kprog2.c:11:26:[m[K [01;36m[Knote: [m[Kexpected â€˜[01m[Kchar (*)[1000][m[Kâ€™ but argument is of type â€˜[01m[Kchar (*)[1000][1000][m[Kâ€™
+   11 | int findLengthOfRow([01;36m[Kchar arr[][1000][m[K, int rowIndex) {
+      |                     [01;36m[K~~~~~^~~~~~~~~~~[m[K
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Kprog2.c:225:23:[m[K [01;31m[Kerror: [m[Kâ€˜[01m[Kbufferindex[m[Kâ€™ undeclared (first use in this function); did you mean â€˜[01m[Kbuffindex[m[Kâ€™?
+  225 |         for(int x=0;x<[01;31m[Kbufferindex[m[K;x++)
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+      |                       [32m[Kbuffindex[m[K
+[01m[Kprog2.c:225:23:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=15 5 5 5 5 
+ rip=25 5 5 5 5 
+ rip=35 5 5 5 5 [0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=15 5 5 5 5 
+ rip=25 5 5 5 5 
+ rip=35 5 5 5 5 [0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 5  5  5  5  5 
+ rip=2 5  5  5  5  5 
+ rip=3 5  5  5  5  5 [0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1
+ rip=2
+ rip=3[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kfindrev[m[Kâ€™:
+[01m[Kprog2.c:14:9:[m[K [01;31m[Kerror: [m[Kâ€˜[01m[Ki[m[Kâ€™ undeclared (first use in this function)
+   14 |     for([01;31m[Ki[m[K=0;i<buffindex;i++)
+      |         [01;31m[K^[m[K
+[01m[Kprog2.c:14:9:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kprog2.c:16:13:[m[K [01;31m[Kerror: [m[Kâ€˜[01m[Kj[m[Kâ€™ undeclared (first use in this function)
+   16 |         for([01;31m[Kj[m[K=0;j<buffindex;j++)
+      |             [01;31m[K^[m[K
+[01m[Kprog2.c:22:29:[m[K [01;31m[Kerror: [m[Kâ€˜[01m[Kstr[m[Kâ€™ undeclared (first use in this function)
+   22 |                     sprintf([01;31m[Kstr[m[K,"%d",j);
+      |                             [01;31m[K^~~[m[K
+[01m[Kprog2.c:29:12:[m[K [01;35m[Kwarning: [m[Kreturning â€˜[01m[Kchar *[m[Kâ€™ from a function with return type â€˜[01m[Kint[m[Kâ€™ makes integer from pointer without a cast [[01;35m[K-Wint-conversion[m[K]
+   29 |     return [01;35m[Kstring[m[K;
+      |            [01;35m[K^~~~~~[m[K
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Kprog2.c:246:23:[m[K [01;35m[Kwarning: [m[Kformat â€˜[01m[K%s[m[Kâ€™ expects argument of type â€˜[01m[Kchar *[m[Kâ€™, but argument 2 has type â€˜[01m[Kint[m[Kâ€™ [[01;35m[K-Wformat=[m[K]
+  246 |             printf(" [01;35m[K%s[m[K ",[32m[Kfindrev(1)[m[K);
+      |                      [01;35m[K~^[m[K   [32m[K~~~~~~~~~~[m[K
+      |                       [01;35m[K|[m[K   [32m[K|[m[K
+      |                       [01;35m[K|[m[K   [32m[Kint[m[K
+      |                       [01;35m[Kchar *[m[K
+      |                      [32m[K%d[m[K
+[0;32m@adilamanm01 [1;31mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kfindrev[m[Kâ€™:
+[01m[Kprog2.c:29:12:[m[K [01;35m[Kwarning: [m[Kreturning â€˜[01m[Kchar *[m[Kâ€™ from a function with return type â€˜[01m[Kint[m[Kâ€™ makes integer from pointer without a cast [[01;35m[K-Wint-conversion[m[K]
+   29 |     return [01;35m[Kstring[m[K;
+      |            [01;35m[K^~~~~~[m[K
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Kprog2.c:246:23:[m[K [01;35m[Kwarning: [m[Kformat â€˜[01m[K%s[m[Kâ€™ expects argument of type â€˜[01m[Kchar *[m[Kâ€™, but argument 2 has type â€˜[01m[Kint[m[Kâ€™ [[01;35m[K-Wformat=[m[K]
+  246 |             printf(" [01;35m[K%s[m[K ",[32m[Kfindrev(1)[m[K);
+      |                      [01;35m[K~^[m[K   [32m[K~~~~~~~~~~[m[K
+      |                       [01;35m[K|[m[K   [32m[K|[m[K
+      |                       [01;35m[K|[m[K   [32m[Kint[m[K
+      |                       [01;35m[Kchar *[m[K
+      |                      [32m[K%d[m[K
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1
+ rip=2
+ rip=3[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 h1  h11  h111  h1111  h11111  h111111  h1111111  h11111111  h111111111  h1111111111  h11111111111  h111111111111  h1111111111111  h11111111111111  h111111111111111  h1111111111111111  h11111111111111111  h111111111111111111  h1111111111111111111  h11111111111111111111  h111111111111111111111  h1111111111111111111111  h11111111111111111111111  h111111111111111111111111  h1111111111111111111111111 
+ rip=2 h11111111111111111111111112  h111111111111111111111111122  h1111111111111111111111111222  h11111111111111111111111112222  h111111111111111111111111122222  h1111111111111111111111111222222  h11111111111111111111111112222222  h111111111111111111111111122222222  h1111111111111111111111111222222222  h11111111111111111111111112222222222  h111111111111111111111111122222222222  h1111111111111111111111111222222222222  h11111111111111111111111112222222222222  h111111111111111111111111122222222222222  h1111111111111111111111111222222222222222  h11111111111111111111111112222222222222222  h111111111111111111111111122222222222222222  h1111111111111111111111111222222222222222222  h11111111111111111111111112222222222222222222  h111111111111111111111111122222222222222222222  h1111111111111111111111111222222222222222222222  h11111111111111111111111112222222222222222222222  h111111111111111111111111122222222222222222222222  h1111111111111111111111111222222222222222222222222  h11111111111111111111111112222222222222222222222222 
+ rip=3 h111111111111111111111111122222222222222222222222223  h1111111111111111111111111222222222222222222222222233  h11111111111111111111111112222222222222222222222222333  h111111111111111111111111122222222222222222222222223333  h1111111111111111111111111222222222222222222222222233333  h11111111111111111111111112222222222222222222222222333333  h111111111111111111111111122222222222222222222222223333333  h1111111111111111111111111222222222222222222222222233333333  h11111111111111111111111112222222222222222222222222333333333  h111111111111111111111111122222222222222222222222223333333333  h1111111111111111111111111222222222222222222222222233333333333  h11111111111111111111111112222222222222222222222222333333333333  h111111111111111111111111122222222222222222222222223333333333333  h1111111111111111111111111222222222222222222222222233333333333333  h11111111111111111111111112222222222222222222222222333333333333333  h111111111111111111111111122222222222222222222222223333333333333333  h1111111111111111111111111222222222222222222222222233333333333333333  h11111111111111111111111112222222222222222222222222333333333333333333  h111111111111111111111111122222222222222222222222223333333333333333333  h1111111111111111111111111222222222222222222222222233333333333333333333  h11111111111111111111111112222222222222222222222222333333333333333333333  h111111111111111111111111122222222222222222222222223333333333333333333333  h1111111111111111111111111222222222222222222222222233333333333333333333333  h11111111111111111111111112222222222222222222222222333333333333333333333333  h111111111111111111111111122222222222222222222222223333333333333333333333333 [0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1
+ rip=2
+ rip=3[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = h1 
+ transitions[1][1]:b = h11 
+ transitions[2][1]:b = h111 
+ transitions[3][1]:p = h1111 
+ transitions[4][1]:p = h11111 
+ transitions[0][1]:eps = h111111 
+ transitions[1][1]:b = h1111111 
+ transitions[2][1]:b = h11111111 
+ transitions[3][1]:p = h111111111 
+ transitions[4][1]:p = h1111111111 
+ transitions[0][1]:eps = h11111111111 
+ transitions[1][1]:b = h111111111111 
+ transitions[2][1]:b = h1111111111111 
+ transitions[3][1]:p = h11111111111111 
+ transitions[4][1]:p = h111111111111111 
+ transitions[0][1]:eps = h1111111111111111 
+ transitions[1][1]:b = h11111111111111111 
+ transitions[2][1]:b = h111111111111111111 
+ transitions[3][1]:p = h1111111111111111111 
+ transitions[4][1]:p = h11111111111111111111 
+ transitions[0][1]:eps = h111111111111111111111 
+ transitions[1][1]:b = h1111111111111111111111 
+ transitions[2][1]:b = h11111111111111111111111 
+ transitions[3][1]:p = h111111111111111111111111 
+ transitions[4][1]:p = h1111111111111111111111111 
+
+ rip=2 transitions[0][2]:p = h11111111111111111111111112 
+ transitions[1][2]:a = h111111111111111111111111122 
+ transitions[2][2]:p = h1111111111111111111111111222 
+ transitions[3][2]:p = h11111111111111111111111112222 
+ transitions[4][2]:p = h111111111111111111111111122222 
+ transitions[0][2]:p = h1111111111111111111111111222222 
+ transitions[1][2]:a = h11111111111111111111111112222222 
+ transitions[2][2]:p = h111111111111111111111111122222222 
+ transitions[3][2]:p = h1111111111111111111111111222222222 
+ transitions[4][2]:p = h11111111111111111111111112222222222 
+ transitions[0][2]:p = h111111111111111111111111122222222222 
+ transitions[1][2]:a = h1111111111111111111111111222222222222 
+ transitions[2][2]:p = h11111111111111111111111112222222222222 
+ transitions[3][2]:p = h111111111111111111111111122222222222222 
+ transitions[4][2]:p = h1111111111111111111111111222222222222222 
+ transitions[0][2]:p = h11111111111111111111111112222222222222222 
+ transitions[1][2]:a = h111111111111111111111111122222222222222222 
+ transitions[2][2]:p = h1111111111111111111111111222222222222222222 
+ transitions[3][2]:p = h11111111111111111111111112222222222222222222 
+ transitions[4][2]:p = h111111111111111111111111122222222222222222222 
+ transitions[0][2]:p = h1111111111111111111111111222222222222222222222 
+ transitions[1][2]:a = h11111111111111111111111112222222222222222222222 
+ transitions[2][2]:p = h111111111111111111111111122222222222222222222222 
+ transitions[3][2]:p = h1111111111111111111111111222222222222222222222222 
+ transitions[4][2]:p = h11111111111111111111111112222222222222222222222222 
+
+ rip=3 transitions[0][3]:p = h111111111111111111111111122222222222222222222222223 
+ transitions[1][3]:p = h1111111111111111111111111222222222222222222222222233 
+ transitions[2][3]:a = h11111111111111111111111112222222222222222222222222333 
+ transitions[3][3]:(aUb) = h111111111111111111111111122222222222222222222222223333 
+ transitions[4][3]:p = h1111111111111111111111111222222222222222222222222233333 
+ transitions[0][3]:p = h11111111111111111111111112222222222222222222222222333333 
+ transitions[1][3]:p = h111111111111111111111111122222222222222222222222223333333 
+ transitions[2][3]:a = h1111111111111111111111111222222222222222222222222233333333 
+ transitions[3][3]:(aUb) = h11111111111111111111111112222222222222222222222222333333333 
+ transitions[4][3]:p = h111111111111111111111111122222222222222222222222223333333333 
+ transitions[0][3]:p = h1111111111111111111111111222222222222222222222222233333333333 
+ transitions[1][3]:p = h11111111111111111111111112222222222222222222222222333333333333 
+ transitions[2][3]:a = h111111111111111111111111122222222222222222222222223333333333333 
+ transitions[3][3]:(aUb) = h1111111111111111111111111222222222222222222222222233333333333333 
+ transitions[4][3]:p = h11111111111111111111111112222222222222222222222222333333333333333 
+ transitions[0][3]:p = h111111111111111111111111122222222222222222222222223333333333333333 
+ transitions[1][3]:p = h1111111111111111111111111222222222222222222222222233333333333333333 
+ transitions[2][3]:a = h11111111111111111111111112222222222222222222222222333333333333333333 
+ transitions[3][3]:(aUb) = h111111111111111111111111122222222222222222222222223333333333333333333 
+ transitions[4][3]:p = h1111111111111111111111111222222222222222222222222233333333333333333333 
+ transitions[0][3]:p = h11111111111111111111111112222222222222222222222222333333333333333333333 
+ transitions[1][3]:p = h111111111111111111111111122222222222222222222222223333333333333333333333 
+ transitions[2][3]:a = h1111111111111111111111111222222222222222222222222233333333333333333333333 
+ transitions[3][3]:(aUb) = h11111111111111111111111112222222222222222222222222333333333333333333333333 
+ transitions[4][3]:p = h111111111111111111111111122222222222222222222222223333333333333333333333333 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+ transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+ transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+ transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+ transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+
+ rip=2 transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+ transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+ transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+ transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+ transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+
+ rip=3 transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+ transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+ transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+ transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+ transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+ transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+ transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+ transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+ transitions[0][1]:eps = h 
+ transitions[1][1]:b = h 
+ transitions[2][1]:b = h 
+ transitions[3][1]:p = h 
+ transitions[4][1]:p = h 
+
+ rip=2 transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+ transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+ transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+ transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+ transitions[0][2]:p = h 
+ transitions[1][2]:a = h 
+ transitions[2][2]:p = h 
+ transitions[3][2]:p = h 
+ transitions[4][2]:p = h 
+
+ rip=3 transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+ transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+ transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+ transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+ transitions[0][3]:p = h 
+ transitions[1][3]:p = h 
+ transitions[2][3]:a = h 
+ transitions[3][3]:(aUb) = h 
+ transitions[4][3]:p = h 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kfindrev[m[Kâ€™:
+[01m[Kprog2.c:24:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of â€˜[01m[Kstrcpy[m[Kâ€™ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+   24 |                         strcpy(store,[01;35m[K(char)i[m[K);
+      |                                      [01;35m[K^~~~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected â€˜[01m[Kconst char * restrict[m[Kâ€™ but argument is of type â€˜[01m[Kchar[m[Kâ€™
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[01m[Kprog2.c:29:34:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of â€˜[01m[Kstrcat[m[Kâ€™ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+   29 |                     strcat(store,[01;35m[K(char)i[m[K);
+      |                                  [01;35m[K^~~~~~~[m[K
+      |                                  [01;35m[K|[m[K
+      |                                  [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:130:14:[m[K [01;36m[Knote: [m[Kexpected â€˜[01m[Kconst char * restrict[m[Kâ€™ but argument is of type â€˜[01m[Kchar[m[Kâ€™
+  130 | extern char *[01;36m[Kstrcat[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kfindrev[m[Kâ€™:
+[01m[Kprog2.c:22:34:[m[K [01;31m[Kerror: [m[Kinvalid initializer
+   22 |                     char p[1000]=[01;31m[K([m[Kchar)i;
+      |                                  [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kfindrev[m[Kâ€™:
+[01m[Kprog2.c:25:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of â€˜[01m[Kstrcpy[m[Kâ€™ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+   25 |                         strcpy(store,[01;35m[Kp[m[K);
+      |                                      [01;35m[K^[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected â€˜[01m[Kconst char * restrict[m[Kâ€™ but argument is of type â€˜[01m[Kchar[m[Kâ€™
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[01m[Kprog2.c:30:34:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of â€˜[01m[Kstrcat[m[Kâ€™ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+   30 |                     strcat(store,[01;35m[Kp[m[K);
+      |                                  [01;35m[K^[m[K
+      |                                  [01;35m[K|[m[K
+      |                                  [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:130:14:[m[K [01;36m[Knote: [m[Kexpected â€˜[01m[Kconst char * restrict[m[Kâ€™ but argument is of type â€˜[01m[Kchar[m[Kâ€™
+  130 | extern char *[01;36m[Kstrcat[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kfindrev[m[Kâ€™:
+[01m[Kprog2.c:31:34:[m[K [01;31m[Kerror: [m[Kâ€˜[01m[Kp[m[Kâ€™ undeclared (first use in this function)
+   31 |                     strcat(store,[01;31m[Kp[m[K);
+      |                                  [01;31m[K^[m[K
+[01m[Kprog2.c:31:34:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = ÄÒ 
+ transitions[1][1]:b = ÄÒ 
+ transitions[2][1]:b = ÄÒ 
+ transitions[3][1]:p = ÄÒ 
+ transitions[4][1]:p = ÄÒ 
+ transitions[0][1]:eps = ÄÒ 
+ transitions[1][1]:b = ÄÒ 
+ transitions[2][1]:b = ÄÒ 
+ transitions[3][1]:p = ÄÒ 
+ transitions[4][1]:p = ÄÒ 
+ transitions[0][1]:eps = ÄÒ 
+ transitions[1][1]:b = ÄÒ 
+ transitions[2][1]:b = ÄÒ 
+ transitions[3][1]:p = ÄÒ 
+ transitions[4][1]:p = ÄÒ 
+ transitions[0][1]:eps = ÄÒ 
+ transitions[1][1]:b = ÄÒ 
+ transitions[2][1]:b = ÄÒ 
+ transitions[3][1]:p = ÄÒ 
+ transitions[4][1]:p = ÄÒ 
+ transitions[0][1]:eps = ÄÒ 
+ transitions[1][1]:b = ÄÒ 
+ transitions[2][1]:b = ÄÒ 
+ transitions[3][1]:p = ÄÒ 
+ transitions[4][1]:p = ÄÒ 
+
+ rip=2 transitions[0][2]:p = ÄÒ 
+ transitions[1][2]:a = ÄÒ 
+ transitions[2][2]:p = ÄÒ 
+ transitions[3][2]:p = ÄÒ 
+ transitions[4][2]:p = ÄÒ 
+ transitions[0][2]:p = ÄÒ 
+ transitions[1][2]:a = ÄÒ 
+ transitions[2][2]:p = ÄÒ 
+ transitions[3][2]:p = ÄÒ 
+ transitions[4][2]:p = ÄÒ 
+ transitions[0][2]:p = ÄÒ 
+ transitions[1][2]:a = ÄÒ 
+ transitions[2][2]:p = ÄÒ 
+ transitions[3][2]:p = ÄÒ 
+ transitions[4][2]:p = ÄÒ 
+ transitions[0][2]:p = ÄÒ 
+ transitions[1][2]:a = ÄÒ 
+ transitions[2][2]:p = ÄÒ 
+ transitions[3][2]:p = ÄÒ 
+ transitions[4][2]:p = ÄÒ 
+ transitions[0][2]:p = ÄÒ 
+ transitions[1][2]:a = ÄÒ 
+ transitions[2][2]:p = ÄÒ 
+ transitions[3][2]:p = ÄÒ 
+ transitions[4][2]:p = ÄÒ 
+
+ rip=3 transitions[0][3]:p = ÄÒ 
+ transitions[1][3]:p = ÄÒ 
+ transitions[2][3]:a = ÄÒ 
+ transitions[3][3]:(aUb) = ÄÒ 
+ transitions[4][3]:p = ÄÒ 
+ transitions[0][3]:p = ÄÒ 
+ transitions[1][3]:p = ÄÒ 
+ transitions[2][3]:a = ÄÒ 
+ transitions[3][3]:(aUb) = ÄÒ 
+ transitions[4][3]:p = ÄÒ 
+ transitions[0][3]:p = ÄÒ 
+ transitions[1][3]:p = ÄÒ 
+ transitions[2][3]:a = ÄÒ 
+ transitions[3][3]:(aUb) = ÄÒ 
+ transitions[4][3]:p = ÄÒ 
+ transitions[0][3]:p = ÄÒ 
+ transitions[1][3]:p = ÄÒ 
+ transitions[2][3]:a = ÄÒ 
+ transitions[3][3]:(aUb) = ÄÒ 
+ transitions[4][3]:p = ÄÒ 
+ transitions[0][3]:p = ÄÒ 
+ transitions[1][3]:p = ÄÒ 
+ transitions[2][3]:a = ÄÒ 
+ transitions[3][3]:(aUb) = ÄÒ 
+ transitions[4][3]:p = ÄÒ 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = 0 
+ transitions[1][1]:b = 01 
+ transitions[2][1]:b = 012 
+ transitions[3][1]:p = 0123 
+ transitions[4][1]:p = 01234 
+ transitions[0][1]:eps = 012340 
+ transitions[1][1]:b = 0123401 
+ transitions[2][1]:b = 01234012 
+ transitions[3][1]:p = 012340123 
+ transitions[4][1]:p = 0123401234 
+ transitions[0][1]:eps = 01234012340 
+ transitions[1][1]:b = 012340123401 
+ transitions[2][1]:b = 0123401234012 
+ transitions[3][1]:p = 01234012340123 
+ transitions[4][1]:p = 012340123401234 
+ transitions[0][1]:eps = 0123401234012340 
+ transitions[1][1]:b = 01234012340123401 
+ transitions[2][1]:b = 012340123401234012 
+ transitions[3][1]:p = 0123401234012340123 
+ transitions[4][1]:p = 01234012340123401234 
+ transitions[0][1]:eps = 012340123401234012340 
+ transitions[1][1]:b = 0123401234012340123401 
+ transitions[2][1]:b = 01234012340123401234012 
+ transitions[3][1]:p = 012340123401234012340123 
+ transitions[4][1]:p = 0123401234012340123401234 
+
+ rip=2 transitions[0][2]:p = 01234012340123401234012340 
+ transitions[1][2]:a = 012340123401234012340123401 
+ transitions[2][2]:p = 0123401234012340123401234012 
+ transitions[3][2]:p = 01234012340123401234012340123 
+ transitions[4][2]:p = 012340123401234012340123401234 
+ transitions[0][2]:p = 0123401234012340123401234012340 
+ transitions[1][2]:a = 01234012340123401234012340123401 
+ transitions[2][2]:p = 012340123401234012340123401234012 
+ transitions[3][2]:p = 0123401234012340123401234012340123 
+ transitions[4][2]:p = 01234012340123401234012340123401234 
+ transitions[0][2]:p = 012340123401234012340123401234012340 
+ transitions[1][2]:a = 0123401234012340123401234012340123401 
+ transitions[2][2]:p = 01234012340123401234012340123401234012 
+ transitions[3][2]:p = 012340123401234012340123401234012340123 
+ transitions[4][2]:p = 0123401234012340123401234012340123401234 
+ transitions[0][2]:p = 01234012340123401234012340123401234012340 
+ transitions[1][2]:a = 012340123401234012340123401234012340123401 
+ transitions[2][2]:p = 0123401234012340123401234012340123401234012 
+ transitions[3][2]:p = 01234012340123401234012340123401234012340123 
+ transitions[4][2]:p = 012340123401234012340123401234012340123401234 
+ transitions[0][2]:p = 0123401234012340123401234012340123401234012340 
+ transitions[1][2]:a = 01234012340123401234012340123401234012340123401 
+ transitions[2][2]:p = 012340123401234012340123401234012340123401234012 
+ transitions[3][2]:p = 0123401234012340123401234012340123401234012340123 
+ transitions[4][2]:p = 01234012340123401234012340123401234012340123401234 
+
+ rip=3 transitions[0][3]:p = 012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 0123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 01234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 0123401234012340123401234012340123401234012340123401234 
+ transitions[0][3]:p = 01234012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 012340123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 0123401234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 01234012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 012340123401234012340123401234012340123401234012340123401234 
+ transitions[0][3]:p = 0123401234012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 01234012340123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 012340123401234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 0123401234012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 01234012340123401234012340123401234012340123401234012340123401234 
+ transitions[0][3]:p = 012340123401234012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 0123401234012340123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 01234012340123401234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 012340123401234012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 0123401234012340123401234012340123401234012340123401234012340123401234 
+ transitions[0][3]:p = 01234012340123401234012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 012340123401234012340123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 0123401234012340123401234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 01234012340123401234012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 012340123401234012340123401234012340123401234012340123401234012340123401234 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = 0 
+ transitions[1][1]:b = 01 
+ transitions[2][1]:b = 012 
+ transitions[3][1]:p = 0123 
+ transitions[4][1]:p = 01234 
+ transitions[0][1]:eps = 012340 
+ transitions[1][1]:b = 0123401 
+ transitions[2][1]:b = 01234012 
+ transitions[3][1]:p = 012340123 
+ transitions[4][1]:p = 0123401234 
+ transitions[0][1]:eps = 01234012340 
+ transitions[1][1]:b = 012340123401 
+ transitions[2][1]:b = 0123401234012 
+ transitions[3][1]:p = 01234012340123 
+ transitions[4][1]:p = 012340123401234 
+ transitions[0][1]:eps = 0123401234012340 
+ transitions[1][1]:b = 01234012340123401 
+ transitions[2][1]:b = 012340123401234012 
+ transitions[3][1]:p = 0123401234012340123 
+ transitions[4][1]:p = 01234012340123401234 
+ transitions[0][1]:eps = 012340123401234012340 
+ transitions[1][1]:b = 0123401234012340123401 
+ transitions[2][1]:b = 01234012340123401234012 
+ transitions[3][1]:p = 012340123401234012340123 
+ transitions[4][1]:p = 0123401234012340123401234 
+
+ rip=2 transitions[0][2]:p = 01234012340123401234012340 
+ transitions[1][2]:a = 012340123401234012340123401 
+ transitions[2][2]:p = 0123401234012340123401234012 
+ transitions[3][2]:p = 01234012340123401234012340123 
+ transitions[4][2]:p = 012340123401234012340123401234 
+ transitions[0][2]:p = 0123401234012340123401234012340 
+ transitions[1][2]:a = 01234012340123401234012340123401 
+ transitions[2][2]:p = 012340123401234012340123401234012 
+ transitions[3][2]:p = 0123401234012340123401234012340123 
+ transitions[4][2]:p = 01234012340123401234012340123401234 
+ transitions[0][2]:p = 012340123401234012340123401234012340 
+ transitions[1][2]:a = 0123401234012340123401234012340123401 
+ transitions[2][2]:p = 01234012340123401234012340123401234012 
+ transitions[3][2]:p = 012340123401234012340123401234012340123 
+ transitions[4][2]:p = 0123401234012340123401234012340123401234 
+ transitions[0][2]:p = 01234012340123401234012340123401234012340 
+ transitions[1][2]:a = 012340123401234012340123401234012340123401 
+ transitions[2][2]:p = 0123401234012340123401234012340123401234012 
+ transitions[3][2]:p = 01234012340123401234012340123401234012340123 
+ transitions[4][2]:p = 012340123401234012340123401234012340123401234 
+ transitions[0][2]:p = 0123401234012340123401234012340123401234012340 
+ transitions[1][2]:a = 01234012340123401234012340123401234012340123401 
+ transitions[2][2]:p = 012340123401234012340123401234012340123401234012 
+ transitions[3][2]:p = 0123401234012340123401234012340123401234012340123 
+ transitions[4][2]:p = 01234012340123401234012340123401234012340123401234 
+
+ rip=3 transitions[0][3]:p = 012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 0123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 01234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 0123401234012340123401234012340123401234012340123401234 
+ transitions[0][3]:p = 01234012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 012340123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 0123401234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 01234012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 012340123401234012340123401234012340123401234012340123401234 
+ transitions[0][3]:p = 0123401234012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 01234012340123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 012340123401234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 0123401234012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 01234012340123401234012340123401234012340123401234012340123401234 
+ transitions[0][3]:p = 012340123401234012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 0123401234012340123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 01234012340123401234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 012340123401234012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 0123401234012340123401234012340123401234012340123401234012340123401234 
+ transitions[0][3]:p = 01234012340123401234012340123401234012340123401234012340123401234012340 
+ transitions[1][3]:p = 012340123401234012340123401234012340123401234012340123401234012340123401 
+ transitions[2][3]:a = 0123401234012340123401234012340123401234012340123401234012340123401234012 
+ transitions[3][3]:(aUb) = 01234012340123401234012340123401234012340123401234012340123401234012340123 
+ transitions[4][3]:p = 012340123401234012340123401234012340123401234012340123401234012340123401234 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kfindrev[m[Kâ€™:
+[01m[Kprog2.c:18:13:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function â€˜[01m[Kf[m[Kâ€™ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   18 |             [01;35m[Kf[m[K(transitions[i][j]!="p")
+      |             [01;35m[K^[m[K
+[01m[Kprog2.c:18:38:[m[K [01;31m[Kerror: [m[Kexpected â€˜[01m[K;[m[Kâ€™ before â€˜[01m[K{[m[Kâ€™ token
+   18 |             f(transitions[i][j]!="p")
+      |                                      [01;31m[K^[m[K
+      |                                      [32m[K;[m[K
+   19 |                 [32m[K{[m[K
+      |                 [32m[K~[m[K                     
+[0;32m@adilamanm01 [1;31mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = 0 
+ transitions[1][1]:b = 01 
+ transitions[2][1]:b = 012 
+ transitions[3][1]:p = 0123 
+ transitions[4][1]:p = 01234 
+ transitions[0][1]:eps = 012340 
+ transitions[1][1]:b = 0123401 
+ transitions[2][1]:b = 01234012 
+ transitions[3][1]:p = 012340123 
+ transitions[4][1]:p = 0123401234 
+ transitions[0][1]:eps = 01234012340 
+ transitions[1][1]:b = 012340123401 
+ transitions[2][1]:b = 0123401234012 
+ transitions[3][1]:p = 01234012340123 
+ transitions[4][1]:p = 012340123401234 
+ transitions[0][1]:eps = 0123401234012340 
+ transitions[1][1]:b = 01234012340123401 
+ transitions[2][1]:b = 012340123401234012 
+ transitions[3][1]:p = 0123401234012340123 
+ transitions[4][1]:p = 01234012340123401234 
+ transitions[0][1]:eps = 012340123401234012340 
+ transitions[1][1]:b = 0123401234012340123401 
+ transitions[2][1]:b = 01234012340123401234012 
+ transitions[3][1]:p = 012340123401234012340123 
+ transitions[4][1]:p = 0123401234012340123401234 
+
+ rip=2 transitions[0][1]:eps = 01234012340123401234012340 
+ transitions[0][2]:p = 012340123401234012340123400 
+ transitions[1][1]:b = 0123401234012340123401234001 
+ transitions[1][2]:a = 01234012340123401234012340011 
+ transitions[2][1]:b = 012340123401234012340123400112 
+ transitions[2][2]:p = 0123401234012340123401234001122 
+ transitions[3][1]:p = 01234012340123401234012340011223 
+ transitions[3][2]:p = 012340123401234012340123400112233 
+ transitions[4][1]:p = 0123401234012340123401234001122334 
+ transitions[4][2]:p = 01234012340123401234012340011223344 
+ transitions[0][1]:eps = 012340123401234012340123400112233440 
+ transitions[0][2]:p = 0123401234012340123401234001122334400 
+ transitions[1][1]:b = 01234012340123401234012340011223344001 
+ transitions[1][2]:a = 012340123401234012340123400112233440011 
+ transitions[2][1]:b = 0123401234012340123401234001122334400112 
+ transitions[2][2]:p = 01234012340123401234012340011223344001122 
+ transitions[3][1]:p = 012340123401234012340123400112233440011223 
+ transitions[3][2]:p = 0123401234012340123401234001122334400112233 
+ transitions[4][1]:p = 01234012340123401234012340011223344001122334 
+ transitions[4][2]:p = 012340123401234012340123400112233440011223344 
+ transitions[0][1]:eps = 0123401234012340123401234001122334400112233440 
+ transitions[0][2]:p = 01234012340123401234012340011223344001122334400 
+ transitions[1][1]:b = 012340123401234012340123400112233440011223344001 
+ transitions[1][2]:a = 0123401234012340123401234001122334400112233440011 
+ transitions[2][1]:b = 01234012340123401234012340011223344001122334400112 
+ transitions[2][2]:p = 012340123401234012340123400112233440011223344001122 
+ transitions[3][1]:p = 0123401234012340123401234001122334400112233440011223 
+ transitions[3][2]:p = 01234012340123401234012340011223344001122334400112233 
+ transitions[4][1]:p = 012340123401234012340123400112233440011223344001122334 
+ transitions[4][2]:p = 0123401234012340123401234001122334400112233440011223344 
+ transitions[0][1]:eps = 01234012340123401234012340011223344001122334400112233440 
+ transitions[0][2]:p = 012340123401234012340123400112233440011223344001122334400 
+ transitions[1][1]:b = 0123401234012340123401234001122334400112233440011223344001 
+ transitions[1][2]:a = 01234012340123401234012340011223344001122334400112233440011 
+ transitions[2][1]:b = 012340123401234012340123400112233440011223344001122334400112 
+ transitions[2][2]:p = 0123401234012340123401234001122334400112233440011223344001122 
+ transitions[3][1]:p = 01234012340123401234012340011223344001122334400112233440011223 
+ transitions[3][2]:p = 012340123401234012340123400112233440011223344001122334400112233 
+ transitions[4][1]:p = 0123401234012340123401234001122334400112233440011223344001122334 
+ transitions[4][2]:p = 01234012340123401234012340011223344001122334400112233440011223344 
+ transitions[0][1]:eps = 012340123401234012340123400112233440011223344001122334400112233440 
+ transitions[0][2]:p = 0123401234012340123401234001122334400112233440011223344001122334400 
+ transitions[1][1]:b = 01234012340123401234012340011223344001122334400112233440011223344001 
+ transitions[1][2]:a = 012340123401234012340123400112233440011223344001122334400112233440011 
+ transitions[2][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112 
+ transitions[2][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122 
+ transitions[3][1]:p = 012340123401234012340123400112233440011223344001122334400112233440011223 
+ transitions[3][2]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233 
+ transitions[4][1]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334 
+ transitions[4][2]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344 
+
+ rip=3 transitions[0][1]:eps = 0123401234012340123401234001122334400112233440011223344001122334400112233440 
+ transitions[0][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400 
+ transitions[0][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000 
+ transitions[1][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001 
+ transitions[1][2]:a = 01234012340123401234012340011223344001122334400112233440011223344001122334400011 
+ transitions[1][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111 
+ transitions[2][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112 
+ transitions[2][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122 
+ transitions[2][3]:a = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222 
+ transitions[3][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223 
+ transitions[3][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233 
+ transitions[3][3]:(aUb) = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333 
+ transitions[4][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334 
+ transitions[4][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344 
+ transitions[4][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444 
+ transitions[0][1]:eps = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440 
+ transitions[0][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400 
+ transitions[0][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000 
+ transitions[1][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001 
+ transitions[1][2]:a = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011 
+ transitions[1][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111 
+ transitions[2][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112 
+ transitions[2][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122 
+ transitions[2][3]:a = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222 
+ transitions[3][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223 
+ transitions[3][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233 
+ transitions[3][3]:(aUb) = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333 
+ transitions[4][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334 
+ transitions[4][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344 
+ transitions[4][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444 
+ transitions[0][1]:eps = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440 
+ transitions[0][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400 
+ transitions[0][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000 
+ transitions[1][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001 
+ transitions[1][2]:a = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011 
+ transitions[1][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111 
+ transitions[2][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112 
+ transitions[2][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122 
+ transitions[2][3]:a = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222 
+ transitions[3][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223 
+ transitions[3][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233 
+ transitions[3][3]:(aUb) = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333 
+ transitions[4][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334 
+ transitions[4][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344 
+ transitions[4][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444 
+ transitions[0][1]:eps = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440 
+ transitions[0][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400 
+ transitions[0][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000 
+ transitions[1][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440001 
+ transitions[1][2]:a = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400011 
+ transitions[1][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000111 
+ transitions[2][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440001112 
+ transitions[2][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400011122 
+ transitions[2][3]:a = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000111222 
+ transitions[3][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440001112223 
+ transitions[3][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400011122233 
+ transitions[3][3]:(aUb) = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000111222333 
+ transitions[4][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440001112223334 
+ transitions[4][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400011122233344 
+ transitions[4][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000111222333444 
+ transitions[0][1]:eps = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440001112223334440 
+ transitions[0][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400011122233344400 
+ transitions[0][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000111222333444000 
+ transitions[1][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440001112223334440001 
+ transitions[1][2]:a = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400011122233344400011 
+ transitions[1][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000111222333444000111 
+ transitions[2][1]:b = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440001112223334440001112 
+ transitions[2][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400011122233344400011122 
+ transitions[2][3]:a = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000111222333444000111222 
+ transitions[3][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440001112223334440001112223 
+ transitions[3][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400011122233344400011122233 
+ transitions[3][3]:(aUb) = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000111222333444000111222333 
+ transitions[4][1]:p = 0123401234012340123401234001122334400112233440011223344001122334400112233440001112223334440001112223334440001112223334440001112223334440001112223334 
+ transitions[4][2]:p = 01234012340123401234012340011223344001122334400112233440011223344001122334400011122233344400011122233344400011122233344400011122233344400011122233344 
+ transitions[4][3]:p = 012340123401234012340123400112233440011223344001122334400112233440011223344000111222333444000111222333444000111222333444000111222333444000111222333444 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Kprog2.c:259:9:[m[K [01;31m[Kerror: [m[Kâ€˜[01m[Krip[m[Kâ€™ undeclared (first use in this function)
+  259 | findrev([01;31m[Krip[m[K);
+      |         [01;31m[K^~~[m[K
+[01m[Kprog2.c:259:9:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1
+ rip=2
+ rip=3 transitions[0][1]:eps = 0 
+ transitions[1][1]:b = 01 
+ transitions[2][1]:b = 012 
+ transitions[3][1]:p = 0123 
+ transitions[4][1]:p = 01234 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1
+ rip=2
+ rip=3 transitions[0][1]:eps = 0 
+ transitions[1][1]:b = 01 
+ transitions[2][1]:b = 012 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = 0 
+ transitions[1][1]:b = 01 
+ transitions[2][1]:b = 012 
+ transitions[0][1]:eps = 0120 
+ transitions[1][1]:b = 01201 
+ transitions[2][1]:b = 012012 
+ transitions[0][1]:eps = 0120120 
+ transitions[1][1]:b = 01201201 
+ transitions[2][1]:b = 012012012 
+ transitions[0][1]:eps = 0120120120 
+ transitions[1][1]:b = 01201201201 
+ transitions[2][1]:b = 012012012012 
+ transitions[0][1]:eps = 0120120120120 
+ transitions[1][1]:b = 01201201201201 
+ transitions[2][1]:b = 012012012012012 
+
+ rip=2 transitions[0][1]:eps = 0120120120120120 
+ transitions[1][1]:b = 01201201201201201 
+ transitions[1][2]:a = 012012012012012011 
+ transitions[2][1]:b = 0120120120120120112 
+ transitions[0][1]:eps = 01201201201201201120 
+ transitions[1][1]:b = 012012012012012011201 
+ transitions[1][2]:a = 0120120120120120112011 
+ transitions[2][1]:b = 01201201201201201120112 
+ transitions[0][1]:eps = 012012012012012011201120 
+ transitions[1][1]:b = 0120120120120120112011201 
+ transitions[1][2]:a = 01201201201201201120112011 
+ transitions[2][1]:b = 012012012012012011201120112 
+ transitions[0][1]:eps = 0120120120120120112011201120 
+ transitions[1][1]:b = 01201201201201201120112011201 
+ transitions[1][2]:a = 012012012012012011201120112011 
+ transitions[2][1]:b = 0120120120120120112011201120112 
+ transitions[0][1]:eps = 01201201201201201120112011201120 
+ transitions[1][1]:b = 012012012012012011201120112011201 
+ transitions[1][2]:a = 0120120120120120112011201120112011 
+ transitions[2][1]:b = 01201201201201201120112011201120112 
+
+ rip=3 transitions[0][1]:eps = 012012012012012011201120112011201120 
+ transitions[1][1]:b = 0120120120120120112011201120112011201 
+ transitions[1][2]:a = 01201201201201201120112011201120112011 
+ transitions[2][1]:b = 012012012012012011201120112011201120112 
+ transitions[2][3]:a = 0120120120120120112011201120112011201122 
+ transitions[3][3]:(aUb) = 01201201201201201120112011201120112011223 
+ transitions[0][1]:eps = 012012012012012011201120112011201120112230 
+ transitions[1][1]:b = 0120120120120120112011201120112011201122301 
+ transitions[1][2]:a = 01201201201201201120112011201120112011223011 
+ transitions[2][1]:b = 012012012012012011201120112011201120112230112 
+ transitions[2][3]:a = 0120120120120120112011201120112011201122301122 
+ transitions[3][3]:(aUb) = 01201201201201201120112011201120112011223011223 
+ transitions[0][1]:eps = 012012012012012011201120112011201120112230112230 
+ transitions[1][1]:b = 0120120120120120112011201120112011201122301122301 
+ transitions[1][2]:a = 01201201201201201120112011201120112011223011223011 
+ transitions[2][1]:b = 012012012012012011201120112011201120112230112230112 
+ transitions[2][3]:a = 0120120120120120112011201120112011201122301122301122 
+ transitions[3][3]:(aUb) = 01201201201201201120112011201120112011223011223011223 
+ transitions[0][1]:eps = 012012012012012011201120112011201120112230112230112230 
+ transitions[1][1]:b = 0120120120120120112011201120112011201122301122301122301 
+ transitions[1][2]:a = 01201201201201201120112011201120112011223011223011223011 
+ transitions[2][1]:b = 012012012012012011201120112011201120112230112230112230112 
+ transitions[2][3]:a = 0120120120120120112011201120112011201122301122301122301122 
+ transitions[3][3]:(aUb) = 01201201201201201120112011201120112011223011223011223011223 
+ transitions[0][1]:eps = 012012012012012011201120112011201120112230112230112230112230 
+ transitions[1][1]:b = 0120120120120120112011201120112011201122301122301122301122301 
+ transitions[1][2]:a = 01201201201201201120112011201120112011223011223011223011223011 
+ transitions[2][1]:b = 012012012012012011201120112011201120112230112230112230112230112 
+ transitions[2][3]:a = 0120120120120120112011201120112011201122301122301122301122301122 
+ transitions[3][3]:(aUb) = 01201201201201201120112011201120112011223011223011223011223011223 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1
+ rip=2
+ rip=3 transitions[0][1]:eps = 0 
+ transitions[1][1]:b = 01 
+ transitions[2][1]:b = 012 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = 0 
+ transitions[1][1]:b = 01 
+ transitions[2][1]:b = 012 
+
+ rip=2 transitions[0][1]:eps = 0120 
+ transitions[1][1]:b = 01201 
+ transitions[1][2]:a = 012011 
+ transitions[2][1]:b = 0120112 
+
+ rip=3 transitions[0][1]:eps = 01201120 
+ transitions[1][1]:b = 012011201 
+ transitions[1][2]:a = 0120112011 
+ transitions[2][1]:b = 01201120112 
+ transitions[2][3]:a = 012011201122 
+ transitions[3][3]:(aUb) = 0120112011223 
+ transitions[0][1]:eps = 01201120112230 
+ transitions[1][1]:b = 012011201122301 
+ transitions[2][1]:b = 0120112011223012 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = 0 
+ transitions[1][1]:b = 01 
+ transitions[2][1]:b = 012 
+
+ rip=2 transitions[1][2]:a = 0121 
+
+ rip=3 transitions[2][3]:a = 01212 
+ transitions[3][3]:(aUb) = 012123 
+ transitions[0][1]:eps = 0121230 
+ transitions[1][1]:b = 01212301 
+ transitions[2][1]:b = 012123012 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[Kgcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+
+ rip=1 transitions[0][1]:eps = ÁÉ]Dø0 
+ transitions[1][1]:b = ÁÉ]Dø01 
+ transitions[2][1]:b = ÁÉ]Dø012 
+
+ rip=2 transitions[1][2]:a = ÁÉ]Dø0121 
+
+ rip=3 transitions[2][3]:a = ÁÉ]Dø01212 
+ transitions[3][3]:(aUb) = ÁÉ]Dø012123 
+ transitions[0][1]:eps = ÁÉ]Dø0121230 
+ transitions[1][1]:b = ÁÉ]Dø01212301 
+ transitions[2][1]:b = ÁÉ]Dø012123012 
+[0;32m@adilamanm01 [0mâžœ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function â€˜[01m[Kfindrev[m[Kâ€™:
+[01m[Kprog2.c:15:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function â€˜[01m[Kemset[m[Kâ€™; did y
