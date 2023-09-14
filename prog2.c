@@ -22,15 +22,20 @@ int findrev(int x)
                 sprintf(buffer, "%d", i);
                 if(c==0)
                 {
+                if(atoi(buffer)!=x)
+                {
                 strcpy(rev,buffer);
                 c++;
                 }
+                }
                 else
+                {
+                if(atoi(buffer)!=x)
                 {
                 strcat(rev,buffer);
                 c++;
                 }
-                 
+                }
                 
         }
          
@@ -55,13 +60,19 @@ int findout(int x)
                 sprintf(buffer, "%d", i);
                 if(c==0)
                 {
+                if(atoi(buffer)!=x)
+                {
                 strcpy(outg,buffer);
                 c++;
                 }
+                }
                 else
+                {
+                if(atoi(buffer)!=x)
                 {
                 strcat(outg,buffer);
                 c++;
+                }
                 }
                  
                 
@@ -117,7 +128,7 @@ int formula(int p,int q,int rip)
         strcpy(transitions[p][q], Solved);
         //printf("solved =%s ",Solved);
         //printf("transitions[%d][%d]:%s ",p,q,transitions[p][q]);
-        //printmatrix();
+        printmatrix();
     }
 
 
@@ -369,8 +380,8 @@ int main(int argc, char *argv[])
 
     }
 
-
-    printf("(S,F)=%s\n",transitions[0][buffindex-1]);
+    printf("\nThe Regular Expression :");
+    printf("(S,F)= %s\n\n",transitions[0][buffindex-1]);
 
     }
 }
