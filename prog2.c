@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<sys/wait.h>
 
 #define MAX 1000
-char buffer[MAX][MAX],transitions[MAX][MAX][MAX],target[1000],temp;
+char buffer[MAX][MAX],transitions[MAX][MAX][MAX],target[1000],temp[1000];
 int buffindex=0,DFSM=1,position=-1,found;
 
 int main(int argc, char *argv[])
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
     else
     {
 
-    printf("%s\n",argv[1]); //printing the input file name
+    //printf("%s\n",argv[1]); //printing the input file name
 
 
     //open the 1nd file DFSM.txt
@@ -52,12 +53,12 @@ int main(int argc, char *argv[])
     fclose(file1);
 
     //printing the buffer index
-    printf("bufferindex:%d\n\n",buffindex);
+    //printf("bufferindex:%d\n\n",buffindex);
 
 
     // printing the stored non-empty lines
     for (int i = 0; i < buffindex; i++) {
-       printf("buffer[%d]: %s\n", i, buffer[i]);
+       //printf("buffer[%d]: %s\n", i, buffer[i]);
     }
     
     //char temp;
@@ -66,7 +67,7 @@ int main(int argc, char *argv[])
 
     //aphalet Length defining
     int alphalength=strlen(buffer[0]);
-    printf("\nalphalength:%d\n\n",alphalength);
+    //printf("\nalphalength:%d\n\n",alphalength);
 
 
     //accessing the buffer
@@ -109,91 +110,91 @@ int main(int argc, char *argv[])
     //printf("new=%s\n",transitions[0][0]);
 
     //assigning  0 to all NxN elements
-    for(int i=0;i<buffindex-1;i++)
+    for(int i=0;i<buffindex;i++)
     {
-        for(int j=0;j<buffindex-1;j++)
+        for(int j=0;j<buffindex;j++)
         {
             strcpy(transitions[i][j],"0");
         }
     }
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Printing the 0 assigned matrix<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-    printf("\t");
-    for(int i=0;i<buffindex-1;i++)
+    /*printf("\t");
+    for(int i=0;i<buffindex;i++)
     {   
         printf("s%d\t",i);
     }
     printf("\n");
 
 
-    for(int i=0;i<buffindex-1;i++)
+    for(int i=0;i<buffindex;i++)
     {
         printf("s%d\t",i);
-        for(int j=0;j<buffindex-1;j++)
+        for(int j=0;j<buffindex;j++)
         {
             printf("%s\t",transitions[i][j]);
         }
         printf("\n\n");
-    }
+    }*/
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>print matrix<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Conversion of given input<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     for(int i=1;i<buffindex-1;i++)
-    {
+    { 
         for(int target=1;target<buffindex-1;target++)
-        {
+        { 
         for(int j=0;j<alphalength;j++)
-        {
+        {   
             int num = buffer[i][j] - '0';
             if(num==target)
             {
-                printf("found buffer[%d][%d]:%d==%d\n",i,j,num,target);
-                if(j==0)
+                if(strcmp(transitions[i][target],"0")==0)
                 {
-
-                    strcpy(transitions[i][target],"a");
+                    strncpy(transitions[i][target], &buffer[0][j], 1);
                 }
-                
-                if(j==1)
+                else
                 {
-                    strcpy(transitions[i][target],"b");
-                }
+                    strcpy(temp, "(");
+                    
 
+                    strcat(transitions[i][target], "U");
+                    strcat(transitions[i][target], &buffer[0][j]);
+                    strcat(transitions[i][target], ")");
+                    strcat(temp, transitions[i][target]);
+                    strcpy(transitions[i][target], temp);
+                }
             }
             else
             {
-                printf("not found buffer[%d][%d]:%d!=%d\n",i,j,num,target);
+                //printf("not found buffer[%d][%d]:%d!=%d\n",i,j,num,target);
             }
             
         }
         }
     }
 
-    //
-    strcpy(transitions[1][2],"b");
-
     // printing the converted input
 
      printf("\n\n\n\t");
-    for(int i=0;i<buffindex-1;i++)
+    for(int i=0;i<buffindex;i++)
     {   
         printf("s%d\t",i);
     }
     printf("\n");
 
 
-    for(int i=0;i<buffindex-1;i++)
+    for(int i=0;i<buffindex;i++)
     {
         printf("s%d\t",i);
-        for(int j=0;j<buffindex-1;j++)
+        for(int j=0;j<buffindex;j++)
         {
             printf("%s\t",transitions[i][j]);
         }
         printf("\n\n");
     }
 
-
+    //printf("%s\n",transitions[3][3]);
 
 
 
