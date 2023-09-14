@@ -141,7 +141,8 @@ int main(int argc, char *argv[])
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Conversion of given input<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     for(int i=1;i<buffindex-1;i++)
     {
-        int target=1;
+        for(int target=1;target<buffindex-1;target++)
+        {
         for(int j=0;j<alphalength;j++)
         {
             int num = buffer[i][j] - '0';
@@ -150,6 +151,7 @@ int main(int argc, char *argv[])
                 printf("found buffer[%d][%d]:%d==%d\n",i,j,num,target);
                 if(j==0)
                 {
+
                     strcpy(transitions[i][target],"a");
                 }
                 
@@ -157,7 +159,6 @@ int main(int argc, char *argv[])
                 {
                     strcpy(transitions[i][target],"b");
                 }
-                target++;
 
             }
             else
@@ -165,6 +166,7 @@ int main(int argc, char *argv[])
                 printf("not found buffer[%d][%d]:%d!=%d\n",i,j,num,target);
             }
             
+        }
         }
     }
 
