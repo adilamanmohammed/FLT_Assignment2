@@ -1,3 +1,11 @@
+/*
+Name : Adil Aman Mohammed
+Course : Formal language theory
+Assignment no: 2
+CWID : A20395630
+Description: The following code is DFSM to Regular Expression Logic which converts the given DFSM to Regular Expressions
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -8,7 +16,7 @@ char buffer[MAX][MAX],transitions[MAX][MAX][MAX],target[1000],temp[1000];
 char rev[MAX], outg[MAX], Solved[MAX];
 int buffindex=0,DFSM=1,position=-1,found;
 
-
+//to find the receiving states for a rip state
 int findrev(int x)
 { int c=0;
     memset(buffer, '\0', sizeof(buffer));
@@ -40,12 +48,12 @@ int findrev(int x)
         }
          
     }
-    printf(" rev=%s",rev);
+    //printf(" rev=%s",rev);
     return strlen(rev);
 }
 
 
-
+//to find the outgoing states for a rip state
 int findout(int x)
 { 
     int c=0;
@@ -79,10 +87,11 @@ int findout(int x)
         }
          
     }
-    printf(" outg=%s\n",outg);
+    //printf(" outg=%s\n",outg);
     return strlen(outg);
 }
 
+//print total matrix for debugging
 int printmatrix()
 {
     printf("\n\n\n\t");
@@ -104,7 +113,7 @@ int printmatrix()
     }
 }
 
-
+//algorithm as per the lecture ppt
 int formula(int p,int q,int rip)
 {
     if(p!=buffindex-1 && q!=0)
@@ -128,20 +137,20 @@ int formula(int p,int q,int rip)
         strcpy(transitions[p][q], Solved);
         //printf("solved =%s ",Solved);
         //printf("transitions[%d][%d]:%s ",p,q,transitions[p][q]);
-        printmatrix();
+        //printmatrix();
     }
 
 
 }
 
 
-
+//rip function 
 int ripstate(int x)
 {
     int m=findrev(x);
     int n=findout(x);
 
-    printf(" m=%d n=%d\n",m,n);
+    //printf(" m=%d n=%d\n",m,n);
 
 
     for(int i=0;i<m;i++)
@@ -153,7 +162,7 @@ int ripstate(int x)
             sprintf(str_a, "%c", rev[i]); // Convert rev[2] to a string
             sprintf(str_b, "%c", outg[j]);
             int a = atoi(str_a),b = atoi(str_b);
-            printf("\np=%d q=%d\n",a,b);
+            //printf("\np=%d q=%d\n",a,b);
 
             formula(a,b,x);
         }
@@ -215,8 +224,15 @@ int main(int argc, char *argv[])
     //printing the buffer index
     //printf("bufferindex:%d\n\n",buffindex);
 
+    //check for file empty
+    if(buffindex==0)
+	{
+		printf("\nDFSM.txt is empty\n");
+        exit(0);
+    }
 
     // printing the stored non-empty lines
+    printf("\n<<<<<<<<<<<<<<Taken input: DFSM.txt>>>>>>>>>>>>>>>>\n\n");
     for (int i = 0; i < buffindex; i++) {
        printf("buffer[%d]: %s\n", i, buffer[i]);
     }
@@ -231,12 +247,12 @@ int main(int argc, char *argv[])
 
 
     //accessing the buffer
-    printf("\nseparate :%c\n",buffer[4][0]);
+    //printf("\nseparate :%c\n",buffer[4][0]);
 
  
     int finalstatelength= strlen(buffer[buffindex-1]);
 
-    printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
+    //printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
 
 
      //check that the given transitions is valid DFSM or Not
@@ -255,7 +271,7 @@ int main(int argc, char *argv[])
             exit(0); //can use exit(1);
         }
     }
-	
+
     //printf("V=%d\n\n\n",V); //V is a flag to indicate that the given transition is invalid
 
 
@@ -264,7 +280,7 @@ int main(int argc, char *argv[])
     if(V==0)
     {
         
-    }
+    
 
     //strcpy(transitions[0][1],"vasu");
     //printf("new=%s\n",transitions[0][0]);
@@ -348,6 +364,7 @@ int main(int argc, char *argv[])
 
 
     //<<<<<<<<<<<<<<<<printing the converted input>>>>>>>>>>>>>>>>
+    printf("\n <<<<<<<<<<<Converted Input matrix>>>>>>>>>>");
 
      printf("\n\n\n\t");
     for(int i=0;i<buffindex;i++)
@@ -370,11 +387,11 @@ int main(int argc, char *argv[])
     //printf("%s\n",transitions[3][3]); //debugging
 
 
-    //<<<<<<<<<<<<<<<<<<<<<<<<Finding Rip Combination>>>>>>>>>>>>>>>>>
+    //<<<<<<<<<<<<<<<<<<<<<<<<Finding Rip Combination and rip the state >>>>>>>>>>>>>>>>>
 
     for(int rip=1;rip<buffindex-1;rip++)
     { 
-        printf("\nrip=%d ",rip);
+        //printf("\nrip=%d ",rip);
         ripstate(rip);
    
 
@@ -383,6 +400,7 @@ int main(int argc, char *argv[])
     printf("\nThe Regular Expression :");
     printf("(S,F)= %s\n\n",transitions[0][buffindex-1]);
 
+    }
     }
 }
 
