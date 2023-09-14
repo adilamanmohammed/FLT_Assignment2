@@ -5,7 +5,7 @@
 
 #define MAX 1000
 char buffer[MAX][MAX],transitions[MAX][MAX][MAX],target[1000],temp[1000];
-char rev[MAX], outg[MAX];
+char rev[MAX], outg[MAX], Solved[MAX];
 int buffindex=0,DFSM=1,position=-1,found;
 
 
@@ -36,7 +36,7 @@ int findrev(int x)
          
     }
     printf(" rev=%s",rev);
-    return 0;
+    return strlen(rev);
 }
 
 
@@ -68,7 +68,85 @@ int findout(int x)
         }
          
     }
-    printf(" out=%s\n",outg);
+    printf(" outg=%s\n",outg);
+    return strlen(outg);
+}
+
+int printmatrix()
+{
+    printf("\n\n\n\t");
+    for(int i=0;i<buffindex;i++)
+    {   
+        printf("s%d\t",i);
+    }
+    printf("\n");
+
+
+    for(int i=0;i<buffindex;i++)
+    {
+        printf("s%d\t",i);
+        for(int j=0;j<buffindex;j++)
+        {
+            printf("%s\t",transitions[i][j]);
+        }
+        printf("\n\n");
+    }
+}
+
+
+int formula(int p,int q,int rip)
+{
+    if(p!=buffindex-1 && q!=0)
+    {
+        if(strcmp(transitions[p][q],"p")!=0)
+        {
+            strcpy(Solved, transitions[p][q]);
+            strcat(Solved,"U");
+        }
+        if(strcmp(transitions[p][q],"eps")!=0)
+        {
+            strcpy(Solved, transitions[p][q]);
+            strcat(Solved,"U");
+        }
+        strcat(Solved,transitions[p][rip]);
+        strcat(Solved,"(");
+        strcat(Solved,transitions[rip][rip]);
+        strcat(Solved,")");
+        strcat(Solved,"*");
+        strcat(Solved,transitions[rip][q]);
+        strcpy(transitions[p][q], Solved);
+        //printf("solved =%s ",Solved);
+        //printf("transitions[%d][%d]:%s ",p,q,transitions[p][q]);
+        //printmatrix();
+    }
+
+
+}
+
+
+
+int ripstate(int x)
+{
+    int m=findrev(x);
+    int n=findout(x);
+
+    printf(" m=%d n=%d\n",m,n);
+
+
+    for(int i=0;i<m;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            char str_a[2]; // Adjust the size as needed
+            char str_b[2];
+            sprintf(str_a, "%c", rev[i]); // Convert rev[2] to a string
+            sprintf(str_b, "%c", outg[j]);
+            int a = atoi(str_a),b = atoi(str_b);
+            printf("\np=%d q=%d\n",a,b);
+
+            formula(a,b,x);
+        }
+    }
     return 0;
 }
 
@@ -76,14 +154,6 @@ int findout(int x)
 
 
 
-
-
-
-int ripstate(int x)
-{
-    findrev(x);
-    findout(x);
-}
 
 
 int main(int argc, char *argv[])
@@ -293,14 +363,14 @@ int main(int argc, char *argv[])
 
     for(int rip=1;rip<buffindex-1;rip++)
     { 
-        printf("\n rip=%d ",rip);
+        printf("\nrip=%d ",rip);
         ripstate(rip);
    
 
     }
 
 
-    
+    printf("(S,F)=%s\n",transitions[0][buffindex-1]);
 
     }
 }
