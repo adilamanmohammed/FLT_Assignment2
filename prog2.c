@@ -5,7 +5,86 @@
 
 #define MAX 1000
 char buffer[MAX][MAX],transitions[MAX][MAX][MAX],target[1000],temp[1000];
+char rev[MAX], outg[MAX];
 int buffindex=0,DFSM=1,position=-1,found;
+
+
+int findrev(int x)
+{ int c=0;
+    memset(buffer, '\0', sizeof(buffer));
+    for(int i=0;i<buffindex;i++)
+    {
+        
+
+            if(strcmp(transitions[i][x],"p")!=0)
+            {
+                char buffer[100];
+                sprintf(buffer, "%d", i);
+                if(c==0)
+                {
+                strcpy(rev,buffer);
+                c++;
+                }
+                else
+                {
+                strcat(rev,buffer);
+                c++;
+                }
+                 
+                
+        }
+         
+    }
+    printf(" rev=%s",rev);
+    return 0;
+}
+
+
+
+int findout(int x)
+{ 
+    int c=0;
+    memset(buffer, '\0', sizeof(buffer));
+    for(int i=0;i<buffindex;i++)
+    {
+        
+
+            if(strcmp(transitions[x][i],"p")!=0)
+            {
+                char buffer[100];
+                sprintf(buffer, "%d", i);
+                if(c==0)
+                {
+                strcpy(outg,buffer);
+                c++;
+                }
+                else
+                {
+                strcat(outg,buffer);
+                c++;
+                }
+                 
+                
+        }
+         
+    }
+    printf(" out=%s\n",outg);
+    return 0;
+}
+
+
+
+
+
+
+
+
+int ripstate(int x)
+{
+    findrev(x);
+    findout(x);
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -58,7 +137,7 @@ int main(int argc, char *argv[])
 
     // printing the stored non-empty lines
     for (int i = 0; i < buffindex; i++) {
-       //printf("buffer[%d]: %s\n", i, buffer[i]);
+       printf("buffer[%d]: %s\n", i, buffer[i]);
     }
     
     //char temp;
@@ -71,12 +150,12 @@ int main(int argc, char *argv[])
 
 
     //accessing the buffer
-    //printf("\nseparate :%c\n",buffer[2][0]);
+    printf("\nseparate :%c\n",buffer[4][0]);
 
  
     int finalstatelength= strlen(buffer[buffindex-1]);
 
-    //printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
+    printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
 
 
      //check that the given transitions is valid DFSM or Not
@@ -114,7 +193,7 @@ int main(int argc, char *argv[])
     {
         for(int j=0;j<buffindex;j++)
         {
-            strcpy(transitions[i][j],"0");
+            strcpy(transitions[i][j],"p");
         }
     }
 
@@ -149,7 +228,7 @@ int main(int argc, char *argv[])
             int num = buffer[i][j] - '0';
             if(num==target)
             {
-                if(strcmp(transitions[i][target],"0")==0)
+                if(strcmp(transitions[i][target],"p")==0)
                 {
                     strncpy(transitions[i][target], &buffer[0][j], 1);
                 }
@@ -174,7 +253,20 @@ int main(int argc, char *argv[])
         }
     }
 
-    // printing the converted input
+    //Initializing New start state value
+    strcpy(transitions[0][1], "eps");
+
+    for(int i=0;i<finalstatelength;i++)
+    {
+        int temp2;
+        temp2=buffer[buffindex-1][i]-'0';
+        //printf("index=%d buffer[%d][%d]=%d",buffindex-1,buffindex-1,i,buffer[buffindex-1][i]);
+        //printf("  temp2=%d\n",temp2);
+        strcpy(transitions[temp2][buffindex-1],"eps");
+    }
+
+
+    //<<<<<<<<<<<<<<<<printing the converted input>>>>>>>>>>>>>>>>
 
      printf("\n\n\n\t");
     for(int i=0;i<buffindex;i++)
@@ -194,15 +286,18 @@ int main(int argc, char *argv[])
         printf("\n\n");
     }
 
-    //printf("%s\n",transitions[3][3]);
+    //printf("%s\n",transitions[3][3]); //debugging
 
 
+    //<<<<<<<<<<<<<<<<<<<<<<<<Finding Rip Combination>>>>>>>>>>>>>>>>>
 
+    for(int rip=1;rip<buffindex-1;rip++)
+    { 
+        printf("\n rip=%d ",rip);
+        ripstate(rip);
+   
 
-
-
-
-
+    }
 
 
     
