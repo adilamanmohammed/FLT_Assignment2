@@ -1,0 +1,1011 @@
+Script started on 2023-09-14 05:34:03+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="154" LINES="15"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	0	0	0	0	
+
+s1	0	0	(aUb)	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	0	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:178:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Ktrcpy[m[K’; did you mean ‘[01m[Kstrcpy[m[K’? [[01;35m[K-Wimplicit-function-declaration[m[K]
+  178 |     [01;35m[Ktrcpy[m[K(transitions[0][1], "eps");
+      |     [01;35m[K^~~~~[m[K
+      |     [32m[Kstrcpy[m[K
+/usr/bin/ld: /tmp/ccIEpWBI.o: in function `main':
+prog2.c:(.text+0x590): undefined reference to `trcpy'
+collect2: error: ld returned 1 exit status
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[Kgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	s4	
+s0	phi	eps	phi	phi	phi	
+
+s1	phi	bhi	ahi	phi	phi	
+
+s2	phi	bhi	phi	ahi	phi	
+
+s3	phi	phi	phi	(ahiUb)	phi	
+
+s4	phi	phi	phi	phi	phi	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:154:21:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrncpy[m[K’
+  154 |                     [01;31m[Kstrncpy[m[K(transitions[i][target], &buffer[0][j]);
+      |                     [01;31m[K^~~~~~~[m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:125:14:[m[K [01;36m[Knote: [m[Kdeclared here
+  125 | extern char *[01;36m[Kstrncpy[m[K (char *__restrict __dest,
+      |              [01;36m[K^~~~~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	s4	
+s0	phi	eps	phi	phi	phi	
+
+s1	phi	b	ab	phi	phi	
+
+s2	phi	b	phi	ab	phi	
+
+s3	phi	phi	phi	(abUb)	phi	
+
+s4	phi	phi	phi	phi	phi	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	s4	
+s0	phi	eps	phi	phi	phi	
+
+s1	phi	b	ab	phi	phi	
+
+s2	phi	b	phi	ab	phi	
+
+s3	phi	phi	phi	(abUb)	phi	
+
+s4	phi	phi	phi	phi	phi	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	
+s0	0	eps	0	0	
+
+s1	0	a	b	0	
+
+s2	0	a	b	0	
+
+s3	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+(aUb)
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:182:27:[m[K [01;31m[Kerror: [m[Karray subscript is not an integer
+  182 |         strcpy(transitions[01;31m[K[[m[Kbuffer[buffindex]][i],"eps");
+      |                           [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:182:27:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrcpy[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  182 |         strcpy([01;35m[Ktransitions[buffer[buffindex][i]][m[K,"eps");
+      |                [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                           [01;35m[K|[m[K
+      |                           [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar * restrict[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:183:27:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrcpy[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  183 |         strcpy([01;35m[Ktransitions[buffer[buffindex][i]][m[K,"eps");
+      |                [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                           [01;35m[K|[m[K
+      |                           [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar * restrict[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	eps	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:183:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kbufferindex[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kbuffindex[m[K’?
+  183 |         temp2=atoi(buffer[[01;31m[Kbufferindex[m[K][i]);
+      |                           [01;31m[K^~~~~~~~~~~[m[K
+      |                           [32m[Kbuffindex[m[K
+[01m[Kprog2.c:183:27:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:183:37:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Katoi[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  183 |         temp2=atoi([01;35m[Kbuffer[buffindex][i][m[K);
+      |                    [01;35m[K~~~~~~~~~~~~~~~~~^~~[m[K
+      |                                     [01;35m[K|[m[K
+      |                                     [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:2[m[K:
+[01m[K/usr/include/stdlib.h:104:30:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+  104 | extern int atoi ([01;36m[Kconst char *__nptr[m[K)
+      |                  [01;36m[K~~~~~~~~~~~~^~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ c[Kgcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+final state: 3	 FSlength :1 FSarrayIndex:4
+Segmentation fault (core dumped)
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:183:37:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Katoi[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  183 |         temp2=atoi([01;35m[Kbuffer[buffindex][i][m[K);
+      |                    [01;35m[K~~~~~~~~~~~~~~~~~^~~[m[K
+      |                                     [01;35m[K|[m[K
+      |                                     [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:2[m[K:
+[01m[K/usr/include/stdlib.h:104:30:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+  104 | extern int atoi ([01;36m[Kconst char *__nptr[m[K)
+      |                  [01;36m[K~~~~~~~~~~~~^~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:184:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kstrcpy[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  184 |         strcpy(x,[01;35m[Kbuffer[buffindex][i][m[K);
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~^~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[01m[Kprog2.c:185:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K][m[K’ token
+  185 |         temp2=atoi(x[01;31m[K][m[K);
+      |                     [01;31m[K^[m[K
+      |                     [32m[K)[m[K
+[01m[Kprog2.c:185:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K][m[K’ token
+  185 |         temp2=atoi(x[01;31m[K][m[K);
+      |                     [01;31m[K^[m[K
+      |                     [32m[K;[m[K
+[01m[Kprog2.c:185:21:[m[K [01;31m[Kerror: [m[Kexpected statement before ‘[01m[K][m[K’ token
+[01m[Kprog2.c:185:22:[m[K [01;31m[Kerror: [m[Kexpected statement before ‘[01m[K)[m[K’ token
+  185 |         temp2=atoi(x][01;31m[K)[m[K;
+      |                      [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:184:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kstrcpy[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  184 |         strcpy(x,[01;35m[Kbuffer[buffindex][i][m[K);
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~^~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar[m[K
+In file included from [01m[Kprog2.c:3[m[K:
+[01m[K/usr/include/string.h:122:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+  122 | extern char *[01;36m[Kstrcpy[m[K (char *__restrict __dest, const char *__restrict __src)
+      |              [01;36m[K^~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:186:23:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kchar *[m[K’ [[01;35m[K-Wformat=[m[K]
+  186 |         printf("\n x=[01;35m[K%d[m[K\n",[32m[Kx[m[K);
+      |                      [01;35m[K~^[m[K    [32m[K~[m[K
+      |                       [01;35m[K|[m[K    [32m[K|[m[K
+      |                       [01;35m[Kint[m[K  [32m[Kchar *[m[K
+      |                      [32m[K%s[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+ temp2=0
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+ temp2=0
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+ temp2=0
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+ temp2=0
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+ temp2=0
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:185:20:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%c[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kchar *[m[K’ [[01;35m[K-Wformat=[m[K]
+  185 |         printf("\n[01;35m[K%c[m[K",[32m[Kx[m[K);
+      |                   [01;35m[K~^[m[K  [32m[K~[m[K
+      |                    [01;35m[K|[m[K  [32m[K|[m[K
+      |                    [01;35m[K|[m[K  [32m[Kchar *[m[K
+      |                    [01;35m[Kint[m[K
+      |                   [32m[K%s[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+
+ temp2=0
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+x=
+ temp2=0
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+x=3
+ temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ index=5
+x=3
+ temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ index=5
+x=3
+ temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+x=3
+ temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	0	eps	0	0	0	
+
+s1	0	b	a	0	0	
+
+s2	0	b	0	a	0	
+
+s3	0	0	0	(aUb)	0	
+
+s4	0	0	0	0	0	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ 
+x=3
+ temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	p	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:188:35:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K][m[K’ token
+  188 |         strcpy(transitions[temp2][[01;31m[K][m[K,);
+      |                                   [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ index=5
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	p	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ index=5
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	p	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ index=5
+ temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	p	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ index=5
+ temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 32
+
+separate :3
+final state: 32	 FSlength :2 FSarrayIndex:4
+ index=5
+ temp2=32
+index=5
+ temp2=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	eps	
+
+s3	p	p	p	(aUb)	p	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 321
+
+separate :3
+final state: 321	 FSlength :3 FSarrayIndex:4
+ index=5
+ temp2=321
+index=5
+ temp2=21
+index=5
+ temp2=1
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	eps	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	p	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 32
+
+separate :3
+final state: 32	 FSlength :2 FSarrayIndex:4
+ index=5  temp2=32
+index=5  temp2=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	eps	
+
+s3	p	p	p	(aUb)	p	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[01m[Kprog2.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kprog2.c:186:16:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K-Wformat-extra-args[m[K]
+  186 |         printf([01;35m[K"index=%d buffer[%d][%d]"[m[K,buffindex,buffindex-1,i,buffer[buffindex-1][i]);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 32
+
+separate :3
+final state: 32	 FSlength :2 FSarrayIndex:4
+ index=4 buffer[4][0]=51  temp2=32
+index=4 buffer[4][1]=50  temp2=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	eps	
+
+s3	p	p	p	(aUb)	p	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 32
+
+separate :3
+final state: 32	 FSlength :2 FSarrayIndex:4
+ index=4 buffer[4][0]=51  temp2=1681904205
+Segmentation fault (core dumped)
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run[4P./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 32
+
+separate :3
+final state: 32	 FSlength :2 FSarrayIndex:4
+ index=4 buffer[4][0]=51  temp2=32
+index=4 buffer[4][1]=50  temp2=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	eps	
+
+s3	p	p	p	(aUb)	p	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 32
+
+separate :3
+final state: 32	 FSlength :2 FSarrayIndex:4
+ index=4 buffer[4][0]=51  temp2=3
+index=4 buffer[4][1]=50  temp2=2
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	eps	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txtgcc prog2.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ gcc prog2.c -o run[4P./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 321
+
+separate :3
+final state: 321	 FSlength :3 FSarrayIndex:4
+ index=4 buffer[4][0]=51  temp2=3
+index=4 buffer[4][1]=50  temp2=2
+index=4 buffer[4][2]=49  temp2=1
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	eps	
+
+s2	p	b	p	a	eps	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 31
+buffer[3]: 33
+buffer[4]: 3
+
+separate :3
+final state: 3	 FSlength :1 FSarrayIndex:4
+ index=4 buffer[4][0]=51  temp2=3
+
+
+
+	s0	s1	s2	s3	s4	
+s0	p	eps	p	p	p	
+
+s1	p	b	a	p	p	
+
+s2	p	b	p	a	p	
+
+s3	p	p	p	(aUb)	eps	
+
+s4	p	p	p	p	p	
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment2 [0;36m([1;31mmain[0;36m) [0m$ exit
+
+Script done on 2023-09-14 06:31:35+00:00 [COMMAND_EXIT_CODE="0"]
