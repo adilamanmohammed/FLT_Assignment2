@@ -3,7 +3,7 @@
 #include<string.h>
 
 #define MAX 1000
-char buffer[MAX][MAX],statenum,transitions[MAX][MAX][MAX];
+char buffer[MAX][MAX],transitions[MAX][MAX][MAX],target[1000],temp;
 int buffindex=0,DFSM=1,position=-1,found;
 
 int main(int argc, char *argv[])
@@ -59,10 +59,14 @@ int main(int argc, char *argv[])
     for (int i = 0; i < buffindex; i++) {
        printf("buffer[%d]: %s\n", i, buffer[i]);
     }
+    
+    //char temp;
+    //temp=buffer[0][0];
+    //printf("buffer[%d][%d]=%c\n",0,0,temp);
 
     //aphalet Length defining
     int alphalength=strlen(buffer[0]);
-    printf("alphalength:%d\n",alphalength);
+    printf("\nalphalength:%d\n\n",alphalength);
 
 
     //accessing the buffer
@@ -71,7 +75,7 @@ int main(int argc, char *argv[])
  
     int finalstatelength= strlen(buffer[buffindex-1]);
 
-    printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
+    //printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
 
 
      //check that the given transitions is valid DFSM or Not
@@ -91,7 +95,7 @@ int main(int argc, char *argv[])
         }
     }
 	
-    printf("V=%d\n\n\n",V); //V is a flag to indicate that the given transition is invalid
+    //printf("V=%d\n\n\n",V); //V is a flag to indicate that the given transition is invalid
 
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Conversion of transition<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -105,9 +109,9 @@ int main(int argc, char *argv[])
     //printf("new=%s\n",transitions[0][0]);
 
     //assigning  0 to all NxN elements
-    for(int i=0;i<buffindex-2;i++)
+    for(int i=0;i<buffindex-1;i++)
     {
-        for(int j=0;j<buffindex-2;j++)
+        for(int j=0;j<buffindex-1;j++)
         {
             strcpy(transitions[i][j],"0");
         }
@@ -115,28 +119,87 @@ int main(int argc, char *argv[])
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Printing the 0 assigned matrix<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     printf("\t");
-    for(int i=0;i<buffindex-2;i++)
+    for(int i=0;i<buffindex-1;i++)
     {   
         printf("s%d\t",i);
     }
     printf("\n");
 
 
-    for(int i=0;i<buffindex-2;i++)
+    for(int i=0;i<buffindex-1;i++)
     {
         printf("s%d\t",i);
-        for(int j=0;j<buffindex-2;j++)
+        for(int j=0;j<buffindex-1;j++)
         {
-            printf("%s\t",transitions[0][0]);
+            printf("%s\t",transitions[i][j]);
         }
-        printf("\n");
+        printf("\n\n");
     }
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>print matrix<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Conversion of given input<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    for(int i=1;i<buffindex-1;i++)
+    {
+        int target=1;
+        for(int j=0;j<alphalength;j++)
+        {
+            int num = buffer[i][j] - '0';
+            if(num==target)
+            {
+                printf("found buffer[%d][%d]:%d==%d\n",i,j,num,target);
+                if(j==0)
+                {
+                    strcpy(transitions[i][target],"a");
+                }
+                
+                if(j==1)
+                {
+                    strcpy(transitions[i][target],"b");
+                }
+                target++;
 
-    for()
+            }
+            else
+            {
+                printf("not found buffer[%d][%d]:%d!=%d\n",i,j,num,target);
+            }
+            
+        }
+    }
+
+    //
+    strcpy(transitions[1][2],"b");
+
+    // printing the converted input
+
+     printf("\n\n\n\t");
+    for(int i=0;i<buffindex-1;i++)
+    {   
+        printf("s%d\t",i);
+    }
+    printf("\n");
+
+
+    for(int i=0;i<buffindex-1;i++)
+    {
+        printf("s%d\t",i);
+        for(int j=0;j<buffindex-1;j++)
+        {
+            printf("%s\t",transitions[i][j]);
+        }
+        printf("\n\n");
+    }
+
+
+
+
+
+
+
+
+
+
 
 
     
