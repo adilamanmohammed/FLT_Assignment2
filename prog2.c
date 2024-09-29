@@ -92,7 +92,7 @@ int findout(int x)
 }
 
 //print total matrix for debugging
-int printmatrix()
+void printmatrix()
 {
     printf("\n\n\n\t");
     for(int i=0;i<buffindex;i++)
@@ -114,7 +114,7 @@ int printmatrix()
 }
 
 //algorithm as per the lecture ppt
-int formula(int p,int q,int rip)
+void formula(int p,int q,int rip)
 {
     if(p!=buffindex-1 && q!=0)
     {
@@ -145,7 +145,7 @@ int formula(int p,int q,int rip)
 
 
 //rip function 
-int ripstate(int x)
+void ripstate(int x)
 {
     int m=findrev(x);
     int n=findout(x);
@@ -167,7 +167,7 @@ int ripstate(int x)
             formula(a,b,x);
         }
     }
-    return 0;
+    
 }
 
 
